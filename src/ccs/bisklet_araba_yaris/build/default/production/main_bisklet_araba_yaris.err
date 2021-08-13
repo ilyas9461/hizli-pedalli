@@ -1,0 +1,77 @@
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\tanimlamalar.h:140:30:  Warning#225  Duplicate #define
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:191:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:191:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:192:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:192:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:223:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:223:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:224:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:224:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:229:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:229:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:230:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:230:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:245:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:245:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:246:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:246:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:256:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:256:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:257:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:257:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:262:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:262:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:266:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:266:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:271:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:271:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:272:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:272:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:277:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:283:5:  Warning#208  Function not void and does not return a value  sensor_test
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:428:5:  Warning#208  Function not void and does not return a value  ee_reset
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:84:2:  Warning#208  Function not void and does not return a value  MAIN
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:386:1:  Warning#207  Code has no effect
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:397:1:  Warning#207  Code has no effect
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:453:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:453:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:454:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:454:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:560:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:560:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:564:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:564:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:577:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:577:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:581:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:581:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:614:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:614:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:615:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:615:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:621:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:621:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:622:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:622:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:693:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:693:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:694:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:694:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:699:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:699:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:703:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:703:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:708:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:708:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:709:1:  Warning#204  Condition always FALSE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:709:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:714:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:873:1:  Warning#216  Interrupts disabled during call to prevent re-entrancy:  (@delay_ms1)
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:27:34:  Warning#202  Variable never used:   v1_pwm
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:27:43:  Warning#202  Variable never used:   v2_pwm
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:65:3:  Warning#202  Variable never used:   panel
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\menu_islem.c:253:20:  Warning#202  Variable never used:   time
+D:\EasyPICV6\Arduino\bisiklet_araba_yaris\ccs\bisklet_araba_yaris\main_bisklet_araba_yaris.c:690:21:  Warning#202  Variable never used:   time
+      Memory usage:   ROM=71%      RAM=11% - 19%
+      0 Errors,  74 Warnings.
+Build Successful.

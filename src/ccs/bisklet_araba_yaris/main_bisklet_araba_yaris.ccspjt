@@ -1,0 +1,16 @@
+[PROJECT]
+Target=build\default\production\main_bisklet_araba_yaris.hex
+Processor_Text=PIC18F45K22
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=build\default\production\main_bisklet_araba_yaris.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\devices\;C:\Program Files (x86)\PICC\drivers\
+[build\default\production\main_bisklet_araba_yaris.c]
+Type=4
+[mru-list]
+1=build\default\production\main_bisklet_araba_yaris.c
+[Units]
+Count=1
+1=main_bisklet_araba_yaris (main)

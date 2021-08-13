@@ -1,0 +1,243 @@
+
+ROM used:   23234/32768 (71%)
+            23234/32768 (71%) including unused fragments
+
+            3.2 Average locations per line
+            12.0 Average locations per statement
+
+RAM used:   176/1536 (11%) at main() level
+            296/1536 (19%) worst case
+
+Stack used: 9 worst case (7 in main + 2 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  875   576  30  main_bisklet_araba_yaris.c
+   80     0   0  main_bisklet_araba_yaris.h
+ 1017     0   0  C:\Program Files (x86)\PICC\devices\18F45K22.h
+  163     0   0  tanimlamalar.h
+ 1351   359  19  C:\Program Files (x86)\PICC\drivers\stdlib.h
+   32     0   0  C:\Program Files (x86)\PICC\drivers\stddef.h
+  423   125   6  C:\Program Files (x86)\PICC\drivers\string.h
+   28     0   0  C:\Program Files (x86)\PICC\drivers\ctype.h
+ 2229   257  13  C:\Program Files (x86)\PICC\drivers\math.h
+  236    44   2  flex_lcd.c
+   30     0   0  timer.h
+   37    11   1  timer.c
+  124    43   2  dfPlayer.c
+   58     0   0  dfPlayer.h
+   74    50   3  eeprom_islem.c
+  533   467  24  menu_islem.c
+----- -----
+ 7290  1932 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   0    1             @delay_ms1
+0     16   0    1             @PUTCHAR_BIU_1
+0     98   0    1             @PUTCHAR_3_
+0     98   0    1             @PUTCHAR_4_
+0    246   1   11             @MULFF
+0     54   0    2             @ITOF
+0    638   1   16             @ADDFF
+0    350   1   14             @DIVFF
+0     90   0   14             @MUL3232
+0    112   0    4   101  3.8  rand
+0     70   0    5             @DIV1616
+0     20   0    4    39  2.1  srand
+0     34   0    5             @MUL1616
+0    162   0   10             @FLT
+0     60   0    4             @SFTOI
+0     36   0    0             @const1120
+0     76   0    1   326  2.8  lcd_send_nibble
+0     68   0    3   235  3.8  lcd_send_byte
+0    186   0    2   380  4.7  lcd_init
+0     40   0    4   186  5.5  lcd_gotoxy
+0    112   0    1   277  3.8  lcd_putc
+0     16   0    0    69  1.6  timer_kur
+0     54   0    0   134  2.8  Timer0_int
+0    178   0   19   873  5.3  sendCommand
+0     18   0    1    43  1.5  mp3_set_volume
+0     20   0    1    43  1.5  mp3_set_equalizer
+0     20   0    0    33  1.3  mp3_enableLoopAll
+0     28   0    4    86  1.7  mp3_play
+0     16   0    0    33  1.3  mp3_stop
+0    130   0    2   136  1.3  mp3_baslangic
+0   1316   3    8  2308  5.1  ee_ilk_baslama_degerleri_oku
+0     16   0    0             @const1258
+0     32   0    2             @PSTRINGC_1134
+0    148   0   13             @DIV3232
+0    190   0   12             @PRINTF_L32U_1134
+0     60   0    4             @MUL321616
+0     14   0    0             @const1269
+0     18   0    0             @const1271
+0    186   0    9             @PRINTF_LU_1134
+0     10   0    0             @const1275
+0     10   0    0             @const1277
+0     44   0    3             @DIV88
+0    110   0    2             @PRINTF_U_1134
+0     16   0    0             @const1285
+0    300   1    1   404  2.8  btn_getir
+0    242   1    7   458  6.9  uzunBasBtnGetir
+0     46   0    5             @READBITA
+0    250   1    1  1009  3.8  lcd_menu_sec
+0     14   0    0             @const1297
+0     14   0    0             @const1298
+0     14   0    0             @const1299
+0     14   0    0             @const1300
+0     18   0    0             @const1301
+0     14   0    0             @const1302
+0     16   0    0             @const1303
+0     14   0    0             @const1304
+0     16   0    0             @const1305
+0     14   0    0             @const1306
+0      8   0    0             @const1307
+0     14   0    0             @const1308
+0     18   0    0             @const1309
+0     14   0    0             @const1310
+0     10   0    0             @const1311
+0     14   0    0             @const1312
+0     10   0    0             @const1313
+0     14   0    0             @const1314
+0     60   0    0             @goto12798
+0    906   2    8  1148  9.6  oyun_sure_kaydet
+0     16   0    0             @const1320
+0     42   0    3             @PSTRINGCN_1134
+0     66   0    5             @FTOSD
+0    452   1   13             @PRINTF_L32D_1134FPFPF
+0     14   0    0             @const1328
+0     16   0    0             @const1329
+0     14   0    0             @const1330
+0     18   0    0             @const1331
+0      8   0    0             @const1332
+0    334   1    4   791  7.9  secme_sure_kaydet
+0     14   0    0             @const1337
+0     14   0    0             @const1338
+0     18   0    0             @const1339
+0   1306   3    8  5383 10.7  motor_pwm_kaydet
+0     12   0    0             @const1345
+0      8   0    0             @const1346
+0     12   0    0             @const1347
+0      8   0    0             @const1348
+0     16   0    0             @const1349
+0     14   0    0             @const1350
+0     12   0    0             @const1353
+0     16   0    0             @const1354
+0     18   0    0             @const1355
+0   1024   2    3  2203  4.9  sensor_test
+0     14   0    0             @const1363
+0     14   0    0             @const1364
+0     14   0    0             @const1365
+0     14   0    0             @const1366
+0     14   0    0             @const1367
+0     14   0    0             @const1368
+0     14   0    0             @const1369
+0     14   0    0             @const1370
+0     14   0    0             @const1371
+0     14   0    0             @const1372
+0     14   0    0             @const1373
+0     14   0    0             @const1374
+0     18   0    0             @const1375
+0     14   0    0             @const1376
+0     18   0    0             @const1377
+0     14   0    0             @const1378
+0    430   1    4   958  7.8  dfPlayer_ses_kaydet
+0     10   0    0             @const1383
+0     14   0    0             @const1384
+0     18   0    0             @const1385
+0    418   1    4   951  7.8  jeton_calisma_sayi_kaydet
+0     12   0    0             @const1390
+0     18   0    0             @const1391
+0     18   0    0             @const1392
+0     12   0    0             @const1393
+0    192   0    6             @PRINTF_D_1134
+0     14   0    0             @const1397
+0     18   0    0             @const1398
+0    784   2    3  1565  6.8  ee_reset
+0     10   0    0             @const1402
+0     16   0    0             @const1403
+0     18   0    0             @const1404
+0      6   0    0             @const1405
+0     12   0    0             @const1406
+0     12   0    0             @const1407
+0     18   0    0             @const1408
+0     10   0    0             @const1409
+0      8   0    0             @const1410
+0      8   0    0             @const1411
+0     16   0    0             @const1412
+0      6   0    0             @const1413
+0    314   1    3  1296  8.7  lcd_menu_islem
+0     58   0    0             @goto13259
+0     14   0    0             @const1419
+0     18   0    0             @const1420
+0   1278   3    1  2945  5.9  MAIN
+0     14   0    0             @const1424
+0     18   0    0             @const1425
+0     10   0    0             @const1426
+0     32   0    2             @PSTRINGC_708
+0     10   0    0             @const1428
+0     32   0    2             @PSTRINGC_712
+0     14   0    0             @const1430
+0     18   0    0             @const1431
+0     10   0    0             @const1432
+0     10   0    0             @const1433
+0     16   0    0             @const1436
+0     48   0    1   160  4.8  mp3_list_kontrol
+0    206   0    2   452  6.4  mp3_rastgele
+0     28   0    0             @MEMSET
+0     18   0    0             @const1447
+0     16   0    0             @const1448
+0   1236   3    4  5210  7.9  oyun_giris_islemler
+0    116   0    2             @PRINTF_U_708
+0    116   0    2             @PRINTF_U_712
+0   4212   9    4 11812 13.0  oyun_islemler
+0     10   0    0             @const1477
+0     10   0    0             @const1478
+0     10   0    0             @const1479
+0     14   0    0             @const1480
+0     10   0    0             @const1481
+0     10   0    0             @const1482
+0     16   0    0             @const1492
+0     14   0    0             @const1493
+0     32   0    1             @SPRINTF
+0    196   0    9             @PRINTF_LU_1496
+0    128   0    2             @PRINTF_U_1496
+0     40   0    2             @PSTRINGR_708
+0     40   0    2             @PSTRINGR_712
+0     20   0    0             @const1508
+0     10   0    0             @const1509
+0     14   0    0             @const1518
+0     18   0    0             @const1519
+0    426   1    4   530  5.6  o1_hiz_olcum
+0    426   1    4   530  5.6  o2_hiz_olcum
+0     94   0    1   211  4.1  o1_akim_olc
+0     94   0    1   211  4.1  o2_akim_olc
+0     60   0    1   260  5.0  ISR_RB0
+0     28   0    0   115  2.5  ISR_RB1
+0     28   0    0   115  2.5  ISR_RB2
+0     48   0    0   160  2.6  ISR_RB_Change
+0    124   0   14   154  5.5  map
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               42
+    Statements              1932
+    Comments                1660
+    Volume (V)              71034
+    Difficulty (D)          199.1
+    Effort to implement (E) 14142520
+    Time to implement (T)   218 hours, 15 minutes
+    Est Delivered Bugs (B)  19
+    Cyclomatic Complexity   251
+    Maintainability (MI)    53
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-00156   336  0  
+00158-07FFE  22894  9530  
+
+
+

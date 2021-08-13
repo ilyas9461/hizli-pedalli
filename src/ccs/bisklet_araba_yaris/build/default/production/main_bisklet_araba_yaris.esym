@@ -1,0 +1,2344 @@
+D G "__PCH__" 0 0 ""5.015""
+D G "__DEVICE__" 0 0 ""
+D G "__DATE__" 0 0 ""12-Mar-19""
+D G "__TIME__" 0 0 ""15:27:38""
+D G "__18F45K22" 0 0 "1" "* File:   main_bisklet_araba_yaris.c"
+C G "" 0 1 1 "*"
+C G "" 0 1 1 "*"
+C G "" 1 1 1 "*"
+C G "" 1 1 1 "*"
+D G "MAIN_BISKLET_ARABA_YARIS_H" 1 9 ""
+c L "set_tris_a" 2 1 6 "FUNCTION"
+v L "value" 2 45 "int8" `54 
+f B "set_tris_a" 2 45 "void(int8 value)" `53 
+v L "value" 2 46 "int8" `56 
+f B "set_tris_b" 2 46 "void(int8 value)" `55 
+v L "value" 2 47 "int8" `58 
+f B "set_tris_c" 2 47 "void(int8 value)" `57 
+v L "value" 2 48 "int8" `60 
+f B "set_tris_d" 2 48 "void(int8 value)" `59 
+v L "value" 2 49 "int8" `62 
+f B "set_tris_e" 2 49 "void(int8 value)" `61 
+f B "get_tris_a" 2 50 "int8()" `63 
+f B "get_tris_b" 2 51 "int8()" `64 
+f B "get_tris_c" 2 52 "int8()" `65 
+f B "get_tris_d" 2 53 "int8()" `66 
+f B "get_tris_e" 2 54 "int8()" `67 
+v L "value" 2 55 "int8" `69 
+f B "output_a" 2 55 "void(int8 value)" `68 
+v L "value" 2 56 "int8" `71 
+f B "output_b" 2 56 "void(int8 value)" `70 
+v L "value" 2 57 "int8" `73 
+f B "output_c" 2 57 "void(int8 value)" `72 
+v L "value" 2 58 "int8" `75 
+f B "output_d" 2 58 "void(int8 value)" `74 
+v L "value" 2 59 "int8" `77 
+f B "output_e" 2 59 "void(int8 value)" `76 
+f B "input_a" 2 60 "int8()" `78 
+f B "input_b" 2 61 "int8()" `79 
+f B "input_c" 2 62 "int8()" `80 
+f B "input_d" 2 63 "int8()" `81 
+f B "input_e" 2 64 "int8()" `82 
+f B "input_change_a" 2 65 "int8()" `83 
+f B "input_change_b" 2 66 "int8()" `84 
+f B "input_change_c" 2 67 "int8()" `85 
+f B "input_change_d" 2 68 "int8()" `86 
+f B "input_change_e" 2 69 "int8()" `87 
+v L "pin" 2 70 "int16" `89 
+f B "input" 2 70 "int8(int16 pin)" `88 
+v L "pin" 2 71 "int16" `91 
+f B "input_state" 2 71 "int8(int16 pin)" `90 
+v L "pin" 2 72 "int16" `93 
+f B "output_low" 2 72 "void(int16 pin)" `92 
+v L "pin" 2 73 "int16" `95 
+f B "output_high" 2 73 "void(int16 pin)" `94 
+v L "pin" 2 74 "int16" `97 
+f B "output_toggle" 2 74 "void(int16 pin)" `96 
+v L "pin" 2 75 "int16" `99 
+v L "level" 2 75 "int8" `100 
+f B "output_bit" 2 75 "void(int16 pin,int8 level)" `98 
+v L "pin" 2 76 "int16" `102 
+f B "output_float" 2 76 "void(int16 pin)" `101 
+v L "pin" 2 77 "int16" `104 
+f B "output_drive" 2 77 "void(int16 pin)" `103  "Constants used to identify pins in the above are:"
+d G "PIN_A0" 2 81 "31744"
+d G "PIN_A1" 2 82 "31745"
+d G "PIN_A2" 2 83 "31746"
+d G "PIN_A3" 2 84 "31747"
+d G "PIN_A4" 2 85 "31748"
+d G "PIN_A5" 2 86 "31749"
+d G "PIN_A6" 2 87 "31750"
+d G "PIN_A7" 2 88 "31751"
+d G "PIN_B0" 2 90 "31752"
+d G "PIN_B1" 2 91 "31753"
+d G "PIN_B2" 2 92 "31754"
+d G "PIN_B3" 2 93 "31755"
+d G "PIN_B4" 2 94 "31756"
+d G "PIN_B5" 2 95 "31757"
+d G "PIN_B6" 2 96 "31758"
+d G "PIN_B7" 2 97 "31759"
+d G "PIN_C0" 2 99 "31760"
+d G "PIN_C1" 2 100 "31761"
+d G "PIN_C2" 2 101 "31762"
+d G "PIN_C3" 2 102 "31763"
+d G "PIN_C4" 2 103 "31764"
+d G "PIN_C5" 2 104 "31765"
+d G "PIN_C6" 2 105 "31766"
+d G "PIN_C7" 2 106 "31767"
+d G "PIN_D0" 2 108 "31768"
+d G "PIN_D1" 2 109 "31769"
+d G "PIN_D2" 2 110 "31770"
+d G "PIN_D3" 2 111 "31771"
+d G "PIN_D4" 2 112 "31772"
+d G "PIN_D5" 2 113 "31773"
+d G "PIN_D6" 2 114 "31774"
+d G "PIN_D7" 2 115 "31775"
+d G "PIN_E0" 2 117 "31776"
+d G "PIN_E1" 2 118 "31777"
+d G "PIN_E2" 2 119 "31778"
+d G "PIN_E3" 2 120 "31779"
+d G "FALSE" 2 123 "0"
+d G "TRUE" 2 124 "1"
+d G "BYTE" 2 126 "int8"
+d G "BOOLEAN" 2 127 "int1"
+d G "getc" 2 129 "getch"
+d G "fgetc" 2 130 "getch"
+d G "getchar" 2 131 "getch"
+d G "putc" 2 132 "putchar"
+d G "fputc" 2 133 "putchar"
+d G "fgets" 2 134 "gets"
+d G "fputs" 2 135 "puts"
+c L "output_drive" 2 1 3 "FUNCTION"
+f B "restart_cause" 2 140 "int8()" `105 
+f B "reset_cpu" 2 141 "void()" `106 
+f B "sleep" 2 142 "void()" `107 
+v L "type" 2 143 "int8" `109 
+f G "sleep" 2 143 "void(int8 type)" `108  "Constants returned from RESTART_CAUSE() are:"
+d G "WDT_TIMEOUT" 2 145 "7"
+d G "MCLR_FROM_SLEEP" 2 146 "11"
+d G "MCLR_FROM_RUN" 2 147 "15"
+d G "NORMAL_POWER_UP" 2 148 "12"
+d G "BROWNOUT_RESTART" 2 149 "14"
+d G "WDT_FROM_SLEEP" 2 150 "3"
+d G "RESET_INSTRUCTION" 2 151 "0"
+d G "SLEEP_FULL" 2 154 "0" "Default"
+d G "SLEEP_IDLE" 2 155 "1" "Clock and peripherals don't stop"
+c L "sleep" 2 1 5 "FUNCTION"
+v L "mode" 2 162 "int8" `111 
+f B "setup_timer_0" 2 162 "void(int8 mode)" `110 
+v L "value" 2 163 "int16" `113 
+f B "set_timer0" 2 163 "void(int16 value)" `112 
+f B "get_timer0" 2 164 "int16()" `114 
+v L "mode" 2 165 "int8" `116 
+v L "prescaler" 2 165 "int8" `117 
+f B "setup_counters" 2 165 "void(int8 mode,int8 prescaler)" `115 
+v L "value" 2 166 "int16" `119 
+f B "set_rtcc" 2 166 "void(int16 value)" `118 
+f B "get_rtcc" 2 167 "int16()" `120  "Constants used for SETUP_TIMER_0() are:"
+d G "T0_INTERNAL" 2 169 "0"
+d G "T0_EXT_L_TO_H" 2 170 "32"
+d G "T0_EXT_H_TO_L" 2 171 "48"
+d G "T0_DIV_1" 2 173 "8"
+d G "T0_DIV_2" 2 174 "0"
+d G "T0_DIV_4" 2 175 "1"
+d G "T0_DIV_8" 2 176 "2"
+d G "T0_DIV_16" 2 177 "3"
+d G "T0_DIV_32" 2 178 "4"
+d G "T0_DIV_64" 2 179 "5"
+d G "T0_DIV_128" 2 180 "6"
+d G "T0_DIV_256" 2 181 "7"
+d G "T0_OFF" 2 183 "0x80"
+d G "T0_8_BIT" 2 185 "0x40"
+d G "RTCC_INTERNAL" 2 187 "0" "The following are provided for compatibility"
+d G "RTCC_EXT_L_TO_H" 2 188 "32" "with older compiler versions"
+d G "RTCC_EXT_H_TO_L" 2 189 "48"
+d G "RTCC_DIV_1" 2 190 "8"
+d G "RTCC_DIV_2" 2 191 "0"
+d G "RTCC_DIV_4" 2 192 "1"
+d G "RTCC_DIV_8" 2 193 "2"
+d G "RTCC_DIV_16" 2 194 "3"
+d G "RTCC_DIV_32" 2 195 "4"
+d G "RTCC_DIV_64" 2 196 "5"
+d G "RTCC_DIV_128" 2 197 "6"
+d G "RTCC_DIV_256" 2 198 "7"
+d G "RTCC_OFF" 2 199 "0x80"
+d G "RTCC_8_BIT" 2 200 "0x40"
+c L "get_rtcc" 2 1 8 "FUNCTION"
+v L "mode" 2 211 "int16" `122 
+f B "setup_wdt" 2 211 "void(int16 mode)" `121 
+f B "restart_wdt" 2 212 "void()" `123  "Constants used for SETUP_WDT() are:"
+d G "WDT_ON" 2 214 "0x100"
+d G "WDT_OFF" 2 215 "0"
+d G "WDT_4MS" 2 217 "0x300"
+d G "WDT_8MS" 2 218 "0x500"
+d G "WDT_16MS" 2 219 "0x700"
+d G "WDT_32MS" 2 220 "0x900"
+d G "WDT_64MS" 2 221 "0xB00"
+d G "WDT_128MS" 2 222 "0xD00"
+d G "WDT_256MS" 2 223 "0xF00"
+d G "WDT_512MS" 2 224 "0x1100"
+d G "WDT_1S" 2 225 "0x1300"
+d G "WDT_2S" 2 226 "0x1500"
+d G "WDT_4S" 2 227 "0x1700"
+d G "WDT_8S" 2 228 "0x1900"
+d G "WDT_16" 2 229 "0x1B00"
+d G "WDT_32S" 2 230 "0x1D00"
+d G "WDT_64S" 2 231 "0x1F00"
+d G "WDT_128S" 2 232 "0x2100"
+c L "restart_wdt" 2 1 3 "FUNCTION"
+v L "mode" 2 238 "int16" `125 
+f B "setup_timer_1" 2 238 "void(int16 mode)" `124 
+f B "get_timer1" 2 239 "int16()" `126 
+v L "value" 2 240 "int16" `128 
+f B "set_timer1" 2 240 "void(int16 value)" `127  "Constants used for SETUP_TIMER_1() are:"
+d G "T1_DISABLED" 2 243 "0"
+d G "T1_INTERNAL" 2 244 "0x07"
+d G "T1_EXTERNAL" 2 245 "0x87"
+d G "T1_EXTERNAL_SYNC" 2 246 "0x83"
+d G "T1_FOSC" 2 247 "0x47"
+d G "T1_ENABLE_SOSC" 2 249 "0x08"
+d G "T1_DIV_BY_1" 2 251 "0"
+d G "T1_DIV_BY_2" 2 252 "0x10"
+d G "T1_DIV_BY_4" 2 253 "0x20"
+d G "T1_DIV_BY_8" 2 254 "0x30"
+d G "T1_GATE" 2 256 "0x8000"
+d G "T1_GATE_INVERTED" 2 257 "0xC000"
+d G "T1_GATE_TOGGLE" 2 258 "0xA000"
+d G "T1_GATE_SINGLE" 2 259 "0x9000"
+d G "T1_GATE_TIMER2" 2 260 "0x8100"
+d G "T1_GATE_COMP1" 2 261 "0x8200"
+d G "T1_GATE_COMP2" 2 262 "0x8300"
+c L "set_timer1" 2 1 3 "FUNCTION"
+v L "mode" 2 267 "int8" `130 
+v L "period" 2 267 "int8" `131 
+v L "postscale" 2 267 "int8" `132 
+f B "setup_timer_2" 2 267 "void(int8 mode,int8 period,int8 postscale)" `129 
+f B "get_timer2" 2 268 "int8()" `133 
+v L "value" 2 269 "int8" `135 
+f B "set_timer2" 2 269 "void(int8 value)" `134  "Constants used for SETUP_TIMER_2() are:"
+d G "T2_DISABLED" 2 271 "0"
+d G "T2_DIV_BY_1" 2 272 "4"
+d G "T2_DIV_BY_4" 2 273 "5"
+d G "T2_DIV_BY_16" 2 274 "6"
+c L "set_timer2" 2 1 3 "FUNCTION"
+v L "mode" 2 279 "int16" `137 
+f B "setup_timer_3" 2 279 "void(int16 mode)" `136 
+f B "get_timer3" 2 280 "int16()" `138 
+v L "value" 2 281 "int16" `140 
+f B "set_timer3" 2 281 "void(int16 value)" `139  "Constants used for SETUP_TIMER_3() are:"
+d G "T3_DISABLED" 2 284 "0"
+d G "T3_INTERNAL" 2 285 "0x07"
+d G "T3_EXTERNAL" 2 286 "0x87"
+d G "T3_EXTERNAL_SYNC" 2 287 "0x83"
+d G "T3_FOSC" 2 288 "0x47"
+d G "T3_ENABLE_SOSC" 2 290 "0x08"
+d G "T3_DIV_BY_1" 2 292 "0"
+d G "T3_DIV_BY_2" 2 293 "0x10"
+d G "T3_DIV_BY_4" 2 294 "0x20"
+d G "T3_DIV_BY_8" 2 295 "0x30"
+d G "T3_GATE" 2 297 "0x8000"
+d G "T3_GATE_INVERTED" 2 298 "0xC000"
+d G "T3_GATE_TOGGLE" 2 299 "0xA000"
+d G "T3_GATE_SINGLE" 2 300 "0x9000"
+d G "T3_GATE_TIMER4" 2 301 "0x8100"
+d G "T3_GATE_COMP1" 2 302 "0x8200"
+d G "T3_GATE_COMP2" 2 303 "0x8300"
+c L "set_timer3" 2 1 3 "FUNCTION"
+v L "mode" 2 308 "int16" `142 
+v L "period" 2 308 "int8" `143 
+v L "postscaler" 2 308 "int8" `144 
+f B "setup_timer_4" 2 308 "void(int16 mode,int8 period,int8 postscaler)" `141 
+f B "get_timer4" 2 309 "int8()" `145 
+v L "value" 2 310 "int8" `147 
+f B "set_timer4" 2 310 "void(int8 value)" `146  "Constants used for SETUP_TIMER_4() are:"
+d G "T4_DISABLED" 2 312 "0"
+d G "T4_DIV_BY_1" 2 313 "4"
+d G "T4_DIV_BY_4" 2 314 "5"
+d G "T4_DIV_BY_16" 2 315 "6"
+c L "set_timer4" 2 1 3 "FUNCTION"
+v L "mode" 2 320 "int16" `149 
+f B "setup_timer_5" 2 320 "void(int16 mode)" `148 
+f B "get_timer5" 2 321 "int16()" `150 
+v L "value" 2 322 "int16" `152 
+f B "set_timer5" 2 322 "void(int16 value)" `151  "Constants used for SETUP_TIMER_5() are:"
+d G "T5_DISABLED" 2 325 "0"
+d G "T5_INTERNAL" 2 326 "0x07"
+d G "T5_EXTERNAL" 2 327 "0x87"
+d G "T5_EXTERNAL_SYNC" 2 328 "0x83"
+d G "T5_FOSC" 2 329 "0x47"
+d G "T5_ENABLE_SOSC" 2 331 "0x08"
+d G "T5_DIV_BY_1" 2 333 "0"
+d G "T5_DIV_BY_2" 2 334 "0x10"
+d G "T5_DIV_BY_4" 2 335 "0x20"
+d G "T5_DIV_BY_8" 2 336 "0x30"
+d G "T5_GATE" 2 338 "0x8000"
+d G "T5_GATE_INVERTED" 2 339 "0xC000"
+d G "T5_GATE_TOGGLE" 2 340 "0xA000"
+d G "T5_GATE_SINGLE" 2 341 "0x9000"
+d G "T5_GATE_TIMER6" 2 342 "0x8100"
+d G "T5_GATE_COMP1" 2 343 "0x8200"
+d G "T5_GATE_COMP2" 2 344 "0x8300"
+c L "set_timer5" 2 1 3 "FUNCTION"
+v L "mode" 2 349 "int8" `154 
+v L "period" 2 349 "int8" `155 
+v L "postscaler" 2 349 "int8" `156 
+f B "setup_timer_6" 2 349 "void(int8 mode,int8 period,int8 postscaler)" `153 
+f B "get_timer6" 2 350 "int8()" `157 
+v L "value" 2 351 "int8" `159 
+f B "set_timer6" 2 351 "void(int8 value)" `158  "Constants used for SETUP_TIMER_6() are:"
+d G "T6_DISABLED" 2 354 "0"
+d G "T6_DIV_BY_1" 2 355 "4"
+d G "T6_DIV_BY_4" 2 356 "5"
+d G "T6_DIV_BY_16" 2 357 "6"
+c L "set_timer6" 2 1 4 "FUNCTION"
+v L "mode" 2 363 "int32" `161 
+f B "setup_ccp1" 2 363 "void(int32 mode)" `160 
+v L "mode" 2 364 "int32" `163 
+v L "pwm" 2 364 "int8" `164 
+f G "setup_ccp1" 2 364 "void(int32 mode,int8 pwm)" `162 
+v L "value" 2 365 "int16" `166 
+f B "set_pwm1_duty" 2 365 "void(int16 value)" `165  "Constants used for SETUP_CCPx() are:"
+d G "CCP_OFF" 2 367 "0"
+d G "CCP_CAPTURE_FE" 2 368 "4"
+d G "CCP_CAPTURE_RE" 2 369 "5"
+d G "CCP_CAPTURE_DIV_4" 2 370 "6"
+d G "CCP_CAPTURE_DIV_16" 2 371 "7"
+d G "CCP_COMPARE_SET_ON_MATCH" 2 372 "8"
+d G "CCP_COMPARE_CLR_ON_MATCH" 2 373 "9"
+d G "CCP_COMPARE_INT" 2 374 "0xA"
+d G "CCP_COMPARE_INT_AND_TOGGLE" 2 375 "0x2"
+d G "CCP_COMPARE_RESET_TIMER" 2 376 "0xB"
+d G "CCP_PWM" 2 377 "0xC"
+d G "CCP_PWM_PLUS_1" 2 378 "0x1c"
+d G "CCP_PWM_PLUS_2" 2 379 "0x2c"
+d G "CCP_PWM_PLUS_3" 2 380 "0x3c"
+c L "set_pwm1_duty" 2 1 1 "FUNCTION"
+d G "CCP_USE_TIMER1_AND_TIMER2" 2 388 "0x0000"
+d G "CCP_USE_TIMER3_AND_TIMER4" 2 389 "0x0100"
+d G "CCP_USE_TIMER5_AND_TIMER6" 2 390 "0x0200"
+d G "CCP_PWM_H_H" 2 393 "0x0c"
+d G "CCP_PWM_H_L" 2 394 "0x0d"
+d G "CCP_PWM_L_H" 2 395 "0x0e"
+d G "CCP_PWM_L_L" 2 396 "0x0f"
+d G "CCP_PWM_FULL_BRIDGE" 2 398 "0x40"
+d G "CCP_PWM_FULL_BRIDGE_REV" 2 399 "0xC0"
+d G "CCP_PWM_HALF_BRIDGE" 2 400 "0x80"
+d G "CCP_SHUTDOWN_ON_COMP1" 2 402 "0x100000"
+d G "CCP_SHUTDOWN_ON_COMP2" 2 403 "0x200000"
+d G "CCP_SHUTDOWN_ON_COMP" 2 404 "0x300000"
+d G "CCP_SHUTDOWN_ON_INT0" 2 405 "0x400000"
+d G "CCP_SHUTDOWN_ON_COMP1_INT0" 2 406 "0x500000"
+d G "CCP_SHUTDOWN_ON_COMP2_INT0" 2 407 "0x600000"
+d G "CCP_SHUTDOWN_ON_COMP_INT0" 2 408 "0x700000"
+d G "CCP_SHUTDOWN_AC_L" 2 410 "0x000000"
+d G "CCP_SHUTDOWN_AC_H" 2 411 "0x040000"
+d G "CCP_SHUTDOWN_AC_F" 2 412 "0x080000"
+d G "CCP_SHUTDOWN_BD_L" 2 414 "0x000000"
+d G "CCP_SHUTDOWN_BD_H" 2 415 "0x010000"
+d G "CCP_SHUTDOWN_BD_F" 2 416 "0x020000"
+d G "CCP_SHUTDOWN_RESTART" 2 418 "0x80000000"
+d G "CCP_PULSE_STEERING_A" 2 420 "0x01000000"
+d G "CCP_PULSE_STEERING_B" 2 421 "0x02000000"
+d G "CCP_PULSE_STEERING_C" 2 422 "0x04000000"
+d G "CCP_PULSE_STEERING_D" 2 423 "0x08000000"
+d G "CCP_PULSE_STEERING_SYNC" 2 424 "0x10000000"
+c L "set_pwm1_duty" 2 1 1 "FUNCTION"
+v L "mode" 2 428 "int32" `171 
+f B "setup_ccp2" 2 428 "void(int32 mode)" `170 
+v L "mode" 2 429 "int32" `173 
+v L "pwm" 2 429 "int8" `174 
+f G "setup_ccp2" 2 429 "void(int32 mode,int8 pwm)" `172 
+v L "value" 2 430 "int16" `176 
+f B "set_pwm2_duty" 2 430 "void(int16 value)" `175 
+c L "set_pwm2_duty" 2 1 1 "FUNCTION"
+v L "mode" 2 436 "int32" `181 
+f B "setup_ccp3" 2 436 "void(int32 mode)" `180 
+v L "mode" 2 437 "int32" `183 
+v L "pwm" 2 437 "int8" `184 
+f G "setup_ccp3" 2 437 "void(int32 mode,int8 pwm)" `182 
+v L "value" 2 438 "int16" `186 
+f B "set_pwm3_duty" 2 438 "void(int16 value)" `185 
+c L "set_pwm3_duty" 2 1 1 "FUNCTION"
+v L "mode" 2 444 "int32" `191 
+f B "setup_ccp4" 2 444 "void(int32 mode)" `190 
+v L "mode" 2 445 "int32" `193 
+v L "pwm" 2 445 "int8" `194 
+f G "setup_ccp4" 2 445 "void(int32 mode,int8 pwm)" `192 
+v L "value" 2 446 "int16" `196 
+f B "set_pwm4_duty" 2 446 "void(int16 value)" `195 
+c L "set_pwm4_duty" 2 1 1 "FUNCTION"
+v L "mode" 2 452 "int32" `201 
+f B "setup_ccp5" 2 452 "void(int32 mode)" `200 
+v L "mode" 2 453 "int32" `203 
+v L "pwm" 2 453 "int8" `204 
+f G "setup_ccp5" 2 453 "void(int32 mode,int8 pwm)" `202 
+v L "value" 2 454 "int16" `206 
+f B "set_pwm5_duty" 2 454 "void(int16 value)" `205 
+c L "set_pwm5_duty" 2 1 3 "FUNCTION"
+v L "mode" 2 461 "int32" `211 
+f B "setup_spi" 2 461 "void(int32 mode)" `210 
+v L "value" 2 462 "int8" `213 
+f B "spi_write" 2 462 "void(int8 value)" `212 
+f B "spi_read" 2 463 "int8()" `214 
+v L "value" 2 464 "int8" `216 
+f G "spi_read" 2 464 "int8(int8 value)" `215 
+f B "spi_data_in" 2 465 "int8()" `217 
+v L "mode" 2 466 "int32" `219 
+f B "setup_spi2" 2 466 "void(int32 mode)" `218 
+v L "value" 2 467 "int8" `221 
+f B "spi_write2" 2 467 "void(int8 value)" `220 
+f B "spi_read2" 2 468 "int8()" `222 
+v L "value" 2 469 "int8" `224 
+f G "spi_read2" 2 469 "int8(int8 value)" `223 
+f B "spi_data_in2" 2 470 "int8()" `225  "Constants used in SETUP_SPI() are:"
+d G "SPI_DISABLED" 2 472 "0x00"
+d G "SPI_MASTER" 2 473 "0x20"
+d G "SPI_SLAVE" 2 474 "0x24"
+d G "SPI_SCK_IDLE_HIGH" 2 475 "0x10"
+d G "SPI_SCK_IDLE_LOW" 2 476 "0x00"
+d G "SPI_CLK_DIV_4" 2 477 "0x00"
+d G "SPI_CLK_DIV_16" 2 478 "0x01"
+d G "SPI_CLK_DIV_64" 2 479 "0x02"
+d G "SPI_CLK_T2" 2 480 "0x03"
+d G "SPI_SS_DISABLED" 2 481 "0x01"
+d G "SPI_XMIT_L_TO_H" 2 483 "0x4000"
+d G "SPI_XMIT_H_TO_L" 2 484 "0x0000"
+d G "SPI_SAMPLE_AT_MIDDLE" 2 486 "0x0000"
+d G "SPI_SAMPLE_AT_END" 2 487 "0x8000"
+d G "SPI_L_TO_H" 2 490 "SPI_SCK_IDLE_LOW"
+d G "SPI_H_TO_L" 2 491 "SPI_SCK_IDLE_HIGH"
+c L "spi_data_in2" 2 1 2 "FUNCTION"
+v L "baud" 2 495 "int32" `227 
+f B "setup_uart" 2 495 "void(int32 baud)" `226 
+v L "baud" 2 496 "int32" `229 
+v L "stream" 2 496 "int8" `230 
+f G "setup_uart" 2 496 "void(int32 baud,int8 stream)" `228 
+v L "baud" 2 497 "int32" `232 
+v L "stream" 2 497 "int8" `233 
+v L "clock" 2 497 "int32" `234 
+f G "setup_uart" 2 497 "void(int32 baud,int8 stream,int32 clock)" `231 
+v L "baud" 2 498 "int32" `236 
+f B "set_uart_speed" 2 498 "void(int32 baud)" `235 
+v L "baud" 2 499 "int32" `238 
+v L "stream" 2 499 "int8" `239 
+f G "set_uart_speed" 2 499 "void(int32 baud,int8 stream)" `237 
+v L "baud" 2 500 "int32" `241 
+v L "stream" 2 500 "int8" `242 
+v L "clock" 2 500 "int32" `243 
+f G "set_uart_speed" 2 500 "void(int32 baud,int8 stream,int32 clock)" `240  "Constants used in setup_uart() are:"
+d G "UART_ADDRESS" 2 504 "2"
+d G "UART_DATA" 2 505 "4"
+d G "UART_AUTODETECT" 2 506 "8"
+d G "UART_AUTODETECT_NOWAIT" 2 507 "9"
+d G "UART_WAKEUP_ON_RDA" 2 508 "10"
+d G "UART_SEND_BREAK" 2 509 "13"
+c L "set_uart_speed" 2 1 3 "FUNCTION"
+v L "mode" 2 513 "int32" `245 
+f B "setup_comparator" 2 513 "void(int32 mode)" `244  "Constants used in setup_comparator() are:"
+d G "NC_NC_NC_NC" 2 516 "0x404"
+d G "NC_NC" 2 517 "0x404"
+d G "CP1_A0_A3" 2 520 "0x000080"
+d G "CP1_A1_A3" 2 521 "0x000081"
+d G "CP1_B3_A3" 2 522 "0x000082"
+d G "CP1_B1_A3" 2 523 "0x000083"
+d G "CP1_A0_DAC" 2 524 "0x000084"
+d G "CP1_A1_DAC" 2 525 "0x000085"
+d G "CP1_B3_DAC" 2 526 "0x000086"
+d G "CP1_B1_DAC" 2 527 "0x000087"
+d G "CP1_A0_FVR" 2 528 "0x200084"
+d G "CP1_A1_FVR" 2 529 "0x200085"
+d G "CP1_B3_FVR" 2 530 "0x200086"
+d G "CP1_B1_FVR" 2 531 "0x200087"
+d G "CP1_OUT_ON_A4" 2 533 "0x000020"
+d G "CP1_INVERT" 2 534 "0x000010"
+d G "CP1_FAST" 2 535 "0x000008"
+d G "CP1_HYST" 2 536 "0x080000"
+d G "CP1_SYNC" 2 537 "0x020000"
+d G "CP2_A0_A2" 2 540 "0x008000"
+d G "CP2_A1_A2" 2 541 "0x008100"
+d G "CP2_B3_A2" 2 542 "0x008200"
+d G "CP2_B1_A2" 2 543 "0x008300"
+d G "CP2_A0_DAC" 2 544 "0x008400"
+d G "CP2_A1_DAC" 2 545 "0x008500"
+d G "CP2_B3_DAC" 2 546 "0x008600"
+d G "CP2_B1_DAC" 2 547 "0x008700"
+d G "CP2_A0_FVR" 2 548 "0x108400"
+d G "CP2_A1_FVR" 2 549 "0x108500"
+d G "CP2_B3_FVR" 2 550 "0x108600"
+d G "CP2_B1_FVR" 2 551 "0x108700"
+d G "CP2_OUT_ON_A5" 2 553 "0x002000"
+d G "CP2_INVERT" 2 554 "0x001000"
+d G "CP2_FAST" 2 555 "0x000800"
+d G "CP2_HYST" 2 556 "0x040000"
+d G "CP2_SYNC" 2 557 "0x010000"
+c L "setup_comparator" 2 1 2 "FUNCTION"
+v L "mode" 2 564 "int8" `249 
+f B "setup_vref" 2 564 "void(int8 mode)" `248  "Constants used in setup_vref() are:"
+d G "VREF_OFF" 2 566 "0"
+d G "VREF_1v024" 2 567 "0x90"
+d G "VREF_2v048" 2 568 "0xA0"
+d G "VREF_4v096" 2 569 "0xB0"
+c L "setup_vref" 2 1 2 "FUNCTION"
+v L "mode" 2 573 "int8" `251 
+f B "setup_low_volt_detect" 2 573 "void(int8 mode)" `250  "Constants used in setup_low_volt_detect() are:"
+d G "LVD_LVDIN" 2 575 "0x1F"
+d G "LVD_47" 2 576 "0x1E"
+d G "LVD_43" 2 577 "0x1D"
+d G "LVD_41" 2 578 "0x1C"
+d G "LVD_38" 2 579 "0x1B"
+d G "LVD_36" 2 580 "0x1A"
+d G "LVD_34" 2 581 "0x19"
+d G "LVD_32" 2 582 "0x18"
+d G "LVD_29" 2 583 "0x17"
+d G "LVD_28" 2 584 "0x16"
+d G "LVD_27" 2 585 "0x15"
+d G "LVD_25" 2 586 "0x14"
+d G "LVD_24" 2 587 "0x13"
+d G "LVD_22" 2 588 "0x12"
+d G "LVD_20" 2 589 "0x11"
+d G "LVD_18" 2 590 "0x10"
+d G "LVD_TRIGGER_BELOW" 2 592 "0"
+d G "LVD_TRIGGER_ABOVE" 2 593 "0x80"
+c L "setup_low_volt_detect" 2 1 3 "FUNCTION"
+v L "mode" 2 598 "int8" `253 
+f B "setup_dac" 2 598 "void(int8 mode)" `252 
+v L "value" 2 599 "int8" `255 
+f B "dac_write" 2 599 "void(int8 value)" `254  "Constants used in SETUP_DAC() are:"
+d G "DAC_OFF" 2 601 "0"
+d G "DAC_VSS_VDD" 2 602 "0x80"
+d G "DAC_VREF_VDD" 2 603 "0x81"
+d G "DAC_VSS_VREF" 2 604 "0x84"
+d G "DAC_VREF_VREF" 2 605 "0x85"
+d G "DAC_VSS_FVR" 2 606 "0x88"
+d G "DAC_FVR_VREF" 2 607 "0x89"
+d G "DAC_OUTPUT" 2 609 "0x20"
+d G "DAC_LVP_POS" 2 610 "0x40"
+d G "DAC_LVP_NEG" 2 611 "0"
+c L "dac_write" 2 1 2 "FUNCTION"
+v L "mode" 2 616 "int8" `257 
+f B "setup_oscillator" 2 616 "int8(int8 mode)" `256 
+v L "mode" 2 617 "int8" `259 
+v L "tune" 2 617 "sint8" `260 
+f G "setup_oscillator" 2 617 "int8(int8 mode,sint8 tune)" `258  "Constants used in setup_oscillator() are:"
+d G "OSC_PLL_ON" 2 619 "0x4000"
+d G "OSC_PLL_OFF" 2 620 "0"
+d G "OSC_31250" 2 621 "0x8000"
+d G "OSC_31KHZ" 2 622 "0x00"
+d G "OSC_250KHZ" 2 623 "0x10"
+d G "OSC_500KHZ" 2 624 "0x20"
+d G "OSC_1MHZ" 2 625 "0x30"
+d G "OSC_2MHZ" 2 626 "0x40"
+d G "OSC_4MHZ" 2 627 "0x50"
+d G "OSC_8MHZ" 2 628 "0x60"
+d G "OSC_16MHZ" 2 629 "0x70"
+d G "OSC_32MHZ" 2 630 "0x4060"
+d G "OSC_64MHZ" 2 631 "0x4070"
+d G "OSC_TIMER1" 2 633 "1"
+d G "OSC_INTRC" 2 634 "2"
+d G "OSC_NORMAL" 2 635 "0"
+d G "OSC_IDLE_MODE" 2 637 "0x80"
+d G "OSC_STATE_STABLE" 2 641 "4"
+d G "OSC_STATE_EXT_RUNNING" 2 642 "8"
+c L "setup_oscillator" 2 1 4 "FUNCTION"
+v L "mode" 2 649 "int16" `262 
+f B "setup_adc" 2 649 "void(int16 mode)" `261 
+f B "read_adc" 2 650 "int8()" `263 
+v L "mode" 2 651 "int8" `265 
+f G "read_adc" 2 651 "int8(int8 mode)" `264 
+f G "read_adc" 2 652 "int16()" `266 
+v L "mode" 2 653 "int8" `268 
+f G "read_adc" 2 653 "int16(int8 mode)" `267 
+f B "adc_done" 2 654 "int8()" `269  "Constants used for SETUP_ADC() are:"
+d G "ADC_OFF" 2 656 "0" "ADC Off"
+d G "ADC_CLOCK_DIV_2" 2 657 "0x100"
+d G "ADC_CLOCK_DIV_4" 2 658 "0x04"
+d G "ADC_CLOCK_DIV_8" 2 659 "0x01"
+d G "ADC_CLOCK_DIV_16" 2 660 "0x05"
+d G "ADC_CLOCK_DIV_32" 2 661 "0x02"
+d G "ADC_CLOCK_DIV_64" 2 662 "0x06"
+d G "ADC_CLOCK_INTERNAL" 2 663 "0x07" "Internal 2-6us"
+d G "ADC_TAD_MUL_0" 2 665 "0x00"
+d G "ADC_TAD_MUL_2" 2 666 "0x08"
+d G "ADC_TAD_MUL_4" 2 667 "0x10"
+d G "ADC_TAD_MUL_6" 2 668 "0x18"
+d G "ADC_TAD_MUL_8" 2 669 "0x20"
+d G "ADC_TAD_MUL_12" 2 670 "0x28"
+d G "ADC_TAD_MUL_16" 2 671 "0x30"
+d G "ADC_TAD_MUL_20" 2 672 "0x38"
+c L "adc_done" 2 1 1 "FUNCTION"
+v L "pins" 2 675 "int32" `271 
+f B "setup_adc_ports" 2 675 "void(int32 pins)" `270 
+v L "pins" 2 676 "int32" `273 
+v L "reference" 2 676 "int32" `274 
+f G "setup_adc_ports" 2 676 "void(int32 pins,int32 reference)" `272 
+v L "channel" 2 677 "int8" `276 
+f B "set_adc_channel" 2 677 "void(int8 channel)" `275  "Constants used in SETUP_ADC_PORTS() are:"
+d G "sAN0" 2 681 "0x00800000" "| A0"
+d G "sAN1" 2 682 "0x01000000" "| A1"
+d G "sAN2" 2 683 "0x02000000" "| A2"
+d G "sAN3" 2 684 "0x04000000" "| A3"
+d G "sAN4" 2 685 "0x08000000" "| A5"
+d G "sAN5" 2 686 "0x00100000" "| E0"
+d G "sAN6" 2 687 "0x00200000" "| E1"
+d G "sAN7" 2 688 "0x00400000" "| E2"
+d G "sAN8" 2 689 "0x00010000" "| B2"
+d G "sAN9" 2 690 "0x00020000" "| B3"
+d G "sAN10" 2 691 "0x00008000" "| B1"
+d G "sAN11" 2 692 "0x00040000" "| B4"
+d G "sAN12" 2 693 "0x00004000" "| B0"
+d G "sAN13" 2 694 "0x00080000" "| B5"
+d G "sAN14" 2 695 "0x00000100" "| C2"
+d G "sAN15" 2 696 "0x00000200" "| C3"
+d G "sAN16" 2 697 "0x00000400" "| C4"
+d G "sAN17" 2 698 "0x00000800" "| C5"
+d G "sAN18" 2 699 "0x00001000" "| C6"
+d G "sAN19" 2 700 "0x00002000" "| C7"
+d G "sAN20" 2 701 "0x00000001" "| D0"
+d G "sAN21" 2 702 "0x00000002" "| D1"
+d G "sAN22" 2 703 "0x00000004" "| D2"
+d G "sAN23" 2 704 "0x00000008" "| D3"
+d G "sAN24" 2 705 "0x00000010" "| D4"
+d G "sAN25" 2 706 "0x00000020" "| D5"
+d G "sAN26" 2 707 "0x00000040" "| D6"
+d G "sAN27" 2 708 "0x00000080" "| D7"
+d G "NO_ANALOGS" 2 709 "0" "None"
+d G "ALL_ANALOG" 2 710 "0x0FFFFFFF" "A0 A1 A2 A3 A5 E0 E1 E2 B2 B3 B1 B4 B0 B5 C2 C3 C4 C5 C6 C7 D0 D1 D2 D3 D4 D5 D6 D7"
+d G "VSS_VDD" 2 713 "0x00000000" "| Range 0-Vdd"
+d G "VSS_VREF" 2 714 "0x40000000" "| Range 0-VrefH"
+d G "VSS_FVR" 2 715 "0x80000000" "| Range 0-Fvr BUF2"
+d G "VREF_VDD" 2 716 "0x10000000" "| Range VrefL-Vdd"
+d G "VREF_VREF" 2 717 "0x50000000" "| Range VrefL-VrefH"
+d G "VREF_FVR" 2 718 "0x90000000" "| Range VrefL-Fvr BUF2"
+d G "CTMU_CHANNEL" 2 722 "0x1D"
+d G "DAC_CHANNEL" 2 723 "0x1E"
+d G "FVR_CHANNEL" 2 724 "0x1F"
+d G "ADC_START_AND_READ" 2 727 "7" "This is the default if nothing is specified"
+d G "ADC_START_ONLY" 2 728 "1"
+d G "ADC_READ_ONLY" 2 729 "6"
+c L "set_adc_channel" 2 1 3 "FUNCTION"
+v L "x" 2 735 "sint8" `278 
+f B "abs" 2 735 "sint8(sint8 x)" `277 
+v L "x" 2 736 "sint16" `280 
+f G "abs" 2 736 "sint16(sint16 x)" `279 
+v L "x" 2 737 "sint32" `282 
+f G "abs" 2 737 "sint32(sint32 x)" `281 
+v L "x" 2 738 "float" `284 
+f G "abs" 2 738 "float(float x)" `283 
+v L "??65535" 2 739 "int8" `286 
+v L "??65535" 2 739 "int8" `287 
+f B "_mul" 2 739 "int16(int8 ,int8 )" `285 
+v L "??65535" 2 740 "sint8" `286 
+v L "??65535" 2 740 "sint8" `290 
+f G "_mul" 2 740 "sint16(sint8 ,sint8 )" `288 
+v L "??65535" 2 741 "int16" `286 
+v L "??65535" 2 741 "int16" `293 
+f G "_mul" 2 741 "int32(int16 ,int16 )" `291 
+v L "??65535" 2 742 "sint16" `286 
+v L "??65535" 2 742 "sint16" `296 
+f G "_mul" 2 742 "sint32(sint16 ,sint16 )" `294  "Memory Manipulation Prototypes:"
+v L "bank" 2 745 "int8" `298 
+v L "offset" 2 745 "int8" `299 
+f B "read_bank" 2 745 "int8(int8 bank,int8 offset)" `297 
+v L "bank" 2 746 "int8" `301 
+v L "offset" 2 746 "int8" `302 
+v L "value" 2 746 "int8" `303 
+f B "write_bank" 2 746 "void(int8 bank,int8 offset,int8 value)" `300 
+v L "dest" 2 747 "*int8" `305 
+v L "src" 2 747 "*int8" `306 
+f B "strcpy" 2 747 "void(*int8 dest,*int8 src)" `304 
+v L "dest" 2 748 "*int8" `308 
+v L "src" 2 748 "*int8" `309 
+f B "strcopy" 2 748 "void(*int8 dest,*int8 src)" `307 
+v L "destination" 2 749 "*int8" `311 
+v L "value" 2 749 "int8" `312 
+v L "num" 2 749 "int16" `313 
+f B "memset" 2 749 "void(*int8 destination,int8 value,int16 num)" `310 
+v L "destination" 2 750 "*int8" `315 
+v L "source" 2 750 "*int8" `316 
+v L "num" 2 750 "int16" `317 
+f B "memcpy" 2 750 "void(*int8 destination,*int8 source,int16 num)" `314  "String Prototypes:"
+v L "cvalue" 2 753 "int8" `319 
+f B "toupper" 2 753 "int8(int8 cvalue)" `318 
+v L "cvalue" 2 754 "int8" `321 
+f B "tolower" 2 754 "int8(int8 cvalue)" `320 
+v L "string" 2 755 "*int8" `323 
+v L "cstring" 2 755 "*int8" `324 
+f B "sprintf" 2 755 "void(*int8 string,*int8 cstring,*int8 _VA_LIST)" `322  "Data Manipulators Prototypes:"
+v L "address" 2 758 "*int8" `327 
+v L "bytes" 2 758 "int8" `328 
+v L "value" 2 758 "int8" `329 
+f B "shift_left" 2 758 "int8(*int8 address,int8 bytes,int8 value)" `326 
+v L "address" 2 759 "*int8" `331 
+v L "bytes" 2 759 "int8" `332 
+v L "value" 2 759 "int8" `333 
+f B "shift_right" 2 759 "int8(*int8 address,int8 bytes,int8 value)" `330 
+v L "address" 2 760 "*int8" `335 
+v L "bytes" 2 760 "int8" `336 
+f B "rotate_left" 2 760 "void(*int8 address,int8 bytes)" `334 
+v L "address" 2 761 "*int8" `338 
+v L "bytes" 2 761 "int8" `339 
+f B "rotate_right" 2 761 "void(*int8 address,int8 bytes)" `337 
+v L "value" 2 762 "int8" `341 
+f B "swap" 2 762 "void(int8 value)" `340 
+v L "var" 2 763 "int16" `343 
+v L "offset" 2 763 "int8" `344 
+f B "make8" 2 763 "int8(int16 var,int8 offset)" `342 
+v L "var" 2 764 "int32" `343 
+v L "offset" 2 764 "int8" `347 
+f G "make8" 2 764 "int8(int32 var,int8 offset)" `345 
+v L "varhigh" 2 765 "int8" `349 
+v L "varlow" 2 765 "int8" `350 
+f B "make16" 2 765 "int16(int8 varhigh,int8 varlow)" `348 
+v L "var1" 2 766 "int16" `352 
+f B "make32" 2 766 "int32(int16 var1)" `351 
+v L "var1" 2 767 "int16" `354 
+v L "var2" 2 767 "int16" `355 
+f G "make32" 2 767 "int32(int16 var1,int16 var2)" `353 
+v L "var1" 2 768 "int16" `354 
+v L "var2" 2 768 "int8" `358 
+f G "make32" 2 768 "int32(int16 var1,int8 var2)" `356 
+v L "var1" 2 769 "int16" `360 
+v L "var2" 2 769 "int8" `361 
+v L "var3" 2 769 "int8" `362 
+f G "make32" 2 769 "int32(int16 var1,int8 var2,int8 var3)" `359 
+v L "var1" 2 770 "int8" `364 
+f G "make32" 2 770 "int32(int8 var1)" `363 
+v L "var1" 2 771 "int8" `354 
+v L "var2" 2 771 "int8" `367 
+f G "make32" 2 771 "int32(int8 var1,int8 var2)" `365 
+v L "var1" 2 772 "int8" `360 
+v L "var2" 2 772 "int8" `361 
+v L "var3" 2 772 "int8" `371 
+f G "make32" 2 772 "int32(int8 var1,int8 var2,int8 var3)" `368 
+v L "var1" 2 773 "int8" `373 
+v L "var2" 2 773 "int8" `374 
+v L "var3" 2 773 "int8" `375 
+v L "var4" 2 773 "int8" `376 
+f G "make32" 2 773 "int32(int8 var1,int8 var2,int8 var3,int8 var4)" `372 
+v L "var1" 2 774 "int8" `354 
+v L "var2" 2 774 "int16" `379 
+f G "make32" 2 774 "int32(int8 var1,int16 var2)" `377 
+v L "var1" 2 775 "int8" `360 
+v L "var2" 2 775 "int16" `361 
+v L "var3" 2 775 "int8" `383 
+f G "make32" 2 775 "int32(int8 var1,int16 var2,int8 var3)" `380 
+v L "var1" 2 776 "int8" `360 
+v L "var2" 2 776 "int8" `361 
+v L "var3" 2 776 "int16" `387 
+f G "make32" 2 776 "int32(int8 var1,int8 var2,int16 var3)" `384 
+v L "var" 2 777 "int8" `389 
+v L "bit" 2 777 "int8" `390 
+f B "bit_set" 2 777 "void(int8 var,int8 bit)" `388 
+v L "var" 2 778 "int16" `389 
+v L "bit" 2 778 "int8" `393 
+f G "bit_set" 2 778 "void(int16 var,int8 bit)" `391 
+v L "var" 2 779 "int32" `389 
+v L "bit" 2 779 "int8" `396 
+f G "bit_set" 2 779 "void(int32 var,int8 bit)" `394 
+v L "var" 2 780 "int8" `398 
+v L "bit" 2 780 "int8" `399 
+f B "bit_clear" 2 780 "void(int8 var,int8 bit)" `397 
+v L "var" 2 781 "int16" `398 
+v L "bit" 2 781 "int8" `402 
+f G "bit_clear" 2 781 "void(int16 var,int8 bit)" `400 
+v L "var" 2 782 "int32" `398 
+v L "bit" 2 782 "int8" `405 
+f G "bit_clear" 2 782 "void(int32 var,int8 bit)" `403 
+v L "var" 2 783 "int8" `407 
+v L "bit" 2 783 "int8" `408 
+f B "bit_test" 2 783 "int8(int8 var,int8 bit)" `406 
+v L "var" 2 784 "int16" `407 
+v L "bit" 2 784 "int8" `411 
+f G "bit_test" 2 784 "int8(int16 var,int8 bit)" `409 
+v L "var" 2 785 "int32" `407 
+v L "bit" 2 785 "int8" `414 
+f G "bit_test" 2 785 "int8(int32 var,int8 bit)" `412  "#use delay() Prototypes:"
+v L "count" 2 788 "int8" `416 
+f B "delay_cycles" 2 788 "void(int8 count)" `415 
+v L "time" 2 789 "int16" `418 
+f B "delay_ms" 2 789 "void(int16 time)" `417 
+v L "time" 2 790 "int16" `420 
+f B "delay_us" 2 790 "void(int16 time)" `419  "#use rs232() Prototypes:"
+v L "cdata" 2 793 "int8" `422 
+f B "putchar" 2 793 "void(int8 cdata)" `421 
+v L "cdata" 2 794 "int8" `424 
+v L "stream" 2 794 "int8" `425 
+f G "putchar" 2 794 "void(int8 cdata,int8 stream)" `423 
+v L "string" 2 795 "*int8" `427 
+f B "puts" 2 795 "void(*int8 string)" `426 
+v L "string" 2 796 "*int8" `429 
+v L "stream" 2 796 "int8" `430 
+f G "puts" 2 796 "void(*int8 string,int8 stream)" `428 
+f B "getch" 2 797 "int8()" `431 
+v L "stream" 2 798 "int8" `433 
+f G "getch" 2 798 "int8(int8 stream)" `432 
+v L "string" 2 799 "*int8" `435 
+f B "gets" 2 799 "void(*int8 string)" `434 
+v L "string" 2 800 "*int8" `437 
+v L "stream" 2 800 "int8" `438 
+f G "gets" 2 800 "void(*int8 string,int8 stream)" `436 
+f B "kbhit" 2 801 "int8()" `439 
+v L "stream" 2 802 "int8" `441 
+f G "kbhit" 2 802 "int8(int8 stream)" `440 
+v L "string" 2 803 "*int8" `443 
+f B "printf" 2 803 "void(*int8 string,*int8 _VA_LIST)" `442 
+v L "stream" 2 804 "int8" `446 
+v L "string" 2 804 "*int8" `447 
+f B "fprintf" 2 804 "void(int8 stream,*int8 string,*int8 _VA_LIST)" `445 
+f B "putc_send" 2 805 "void()" `449 
+v L "stream" 2 806 "int8" `451 
+f B "fputc_send" 2 806 "void(int8 stream)" `450 
+f B "rcv_buffer_full" 2 807 "int8()" `452 
+v L "stream" 2 808 "int8" `454 
+f G "rcv_buffer_full" 2 808 "int8(int8 stream)" `453 
+f B "rcv_buffer_bytes" 2 809 "int16()" `455 
+v L "stream" 2 810 "int8" `457 
+f G "rcv_buffer_bytes" 2 810 "int16(int8 stream)" `456 
+f B "tx_buffer_full" 2 811 "int8()" `458 
+v L "stream" 2 812 "int8" `460 
+f G "tx_buffer_full" 2 812 "int8(int8 stream)" `459 
+f B "tx_buffer_bytes" 2 813 "int16()" `461 
+v L "stream" 2 814 "int8" `463 
+f G "tx_buffer_bytes" 2 814 "int16(int8 stream)" `462  "#use i2c() Prototypes:"
+f B "i2c_read" 2 817 "int8()" `464 
+v L "stream" 2 818 "int8" `466 
+f G "i2c_read" 2 818 "int8(int8 stream)" `465 
+v L "stream" 2 819 "int8" `468 
+v L "ack" 2 819 "int8" `469 
+f G "i2c_read" 2 819 "int8(int8 stream,int8 ack)" `467 
+v L "data" 2 820 "int8" `471 
+f B "i2c_write" 2 820 "int8(int8 data)" `470 
+v L "stream" 2 821 "int8" `473 
+v L "data" 2 821 "int8" `474 
+f G "i2c_write" 2 821 "int8(int8 stream,int8 data)" `472 
+f B "i2c_start" 2 822 "void()" `475 
+v L "stream" 2 823 "int8" `477 
+f G "i2c_start" 2 823 "void(int8 stream)" `476 
+v L "stream" 2 824 "int8" `479 
+v L "restart" 2 824 "int8" `480 
+f G "i2c_start" 2 824 "void(int8 stream,int8 restart)" `478 
+f B "i2c_stop" 2 825 "void()" `481 
+v L "stream" 2 826 "int8" `483 
+f G "i2c_stop" 2 826 "void(int8 stream)" `482 
+f B "i2c_isr_state" 2 827 "int8()" `484 
+v L "addr" 2 828 "int8" `486 
+f B "i2c_slaveaddr" 2 828 "void(int8 addr)" `485 
+v L "stream" 2 829 "int8" `488 
+v L "addr" 2 829 "int8" `489 
+f G "i2c_slaveaddr" 2 829 "void(int8 stream,int8 addr)" `487 
+f B "i2c_poll" 2 830 "int8()" `490 
+v L "stream" 2 831 "int8" `492 
+f G "i2c_poll" 2 831 "int8(int8 stream)" `491 
+v L "baud" 2 832 "int32" `494 
+f B "i2c_init" 2 832 "void(int32 baud)" `493 
+v L "stream" 2 833 "int8" `496 
+v L "baud" 2 833 "int32" `497 
+f G "i2c_init" 2 833 "void(int8 stream,int32 baud)" `495  "#use spi() Prototypes:"
+f B "spi_xfer" 2 836 "int8()" `498 
+f G "spi_xfer" 2 837 "int16()" `499 
+f G "spi_xfer" 2 838 "int32()" `500 
+v L "data" 2 839 "int8" `502 
+f G "spi_xfer" 2 839 "int8(int8 data)" `501 
+v L "data" 2 840 "int16" `504 
+f G "spi_xfer" 2 840 "int16(int16 data)" `503 
+v L "data" 2 841 "int32" `506 
+f G "spi_xfer" 2 841 "int32(int32 data)" `505 
+v L "stream" 2 842 "int8" `508 
+v L "data" 2 842 "int8" `509 
+f G "spi_xfer" 2 842 "int8(int8 stream,int8 data)" `507 
+v L "stream" 2 843 "int8" `508 
+v L "data" 2 843 "int16" `512 
+f G "spi_xfer" 2 843 "int16(int8 stream,int16 data)" `510 
+v L "stream" 2 844 "int8" `508 
+v L "data" 2 844 "int32" `515 
+f G "spi_xfer" 2 844 "int32(int8 stream,int32 data)" `513 
+v L "stream" 2 845 "int8" `517 
+v L "data" 2 845 "int8" `518 
+v L "bits" 2 845 "int8" `519 
+f G "spi_xfer" 2 845 "int8(int8 stream,int8 data,int8 bits)" `516 
+v L "stream" 2 846 "int8" `517 
+v L "data" 2 846 "int16" `518 
+v L "bits" 2 846 "int8" `523 
+f G "spi_xfer" 2 846 "int16(int8 stream,int16 data,int8 bits)" `520 
+v L "stream" 2 847 "int8" `517 
+v L "data" 2 847 "int32" `518 
+v L "bits" 2 847 "int8" `527 
+f G "spi_xfer" 2 847 "int32(int8 stream,int32 data,int8 bits)" `524 
+v L "baud" 2 848 "int32" `529 
+f B "spi_init" 2 848 "void(int32 baud)" `528 
+v L "stream" 2 849 "int8" `531 
+v L "baud" 2 849 "int32" `532 
+f G "spi_init" 2 849 "void(int8 stream,int32 baud)" `530 
+v L "baud" 2 850 "int32" `534 
+f B "spi_speed" 2 850 "void(int32 baud)" `533 
+v L "stream" 2 851 "int8" `536 
+v L "baud" 2 851 "int32" `537 
+f G "spi_speed" 2 851 "void(int8 stream,int32 baud)" `535 
+v L "stream" 2 852 "int8" `539 
+v L "baud" 2 852 "int32" `540 
+v L "clock" 2 852 "int32" `541 
+f G "spi_speed" 2 852 "void(int8 stream,int32 baud,int32 clock)" `538 
+v L "data" 2 853 "int8" `543 
+f B "spi_prewrite" 2 853 "void(int8 data)" `542 
+v L "data" 2 854 "int16" `545 
+f G "spi_prewrite" 2 854 "void(int16 data)" `544 
+v L "data" 2 855 "int32" `547 
+f G "spi_prewrite" 2 855 "void(int32 data)" `546 
+v L "??65535" 2 856 "int8" `549 
+v L "data" 2 856 "int8" `550 
+f G "spi_prewrite" 2 856 "void(int8 ,int8 data)" `548 
+v L "??65535" 2 857 "int8" `549 
+v L "data" 2 857 "int16" `553 
+f G "spi_prewrite" 2 857 "void(int8 ,int16 data)" `551 
+v L "??65535" 2 858 "int8" `549 
+v L "data" 2 858 "int32" `556 
+f G "spi_prewrite" 2 858 "void(int8 ,int32 data)" `554 
+f B "spi_xfer_in" 2 859 "int8()" `557 
+f G "spi_xfer_in" 2 860 "int16()" `558 
+f G "spi_xfer_in" 2 861 "int32()" `559 
+v L "bits" 2 862 "int8" `561 
+f G "spi_xfer_in" 2 862 "int8(int8 bits)" `560 
+v L "bits" 2 863 "int8" `563 
+f G "spi_xfer_in" 2 863 "int16(int8 bits)" `562 
+v L "bits" 2 864 "int8" `565 
+f G "spi_xfer_in" 2 864 "int32(int8 bits)" `564 
+v L "stream" 2 865 "int8" `567 
+v L "bits" 2 865 "int8" `568 
+f G "spi_xfer_in" 2 865 "int8(int8 stream,int8 bits)" `566 
+v L "stream" 2 866 "int8" `567 
+v L "bits" 2 866 "int8" `571 
+f G "spi_xfer_in" 2 866 "int16(int8 stream,int8 bits)" `569 
+v L "stream" 2 867 "int8" `567 
+v L "bits" 2 867 "int8" `574 
+f G "spi_xfer_in" 2 867 "int32(int8 stream,int8 bits)" `572  "#use rtos() Prototypes:"
+f B "rtos_run" 2 870 "void()" `575 
+f B "rtos_yield" 2 871 "void()" `576 
+v L "task" 2 872 "int8" `578 
+f B "rtos_enable" 2 872 "void(int8 task)" `577 
+v L "task" 2 873 "int8" `580 
+f B "rtos_disable" 2 873 "void(int8 task)" `579 
+f B "rtos_terminate" 2 874 "void()" `581 
+v L "flag" 2 875 "int8" `583 
+f B "rtos_await" 2 875 "void(int8 flag)" `582 
+v L "sem" 2 876 "int8" `585 
+f B "rtos_wait" 2 876 "void(int8 sem)" `584 
+v L "sem" 2 877 "int8" `587 
+f B "rtos_signal" 2 877 "void(int8 sem)" `586 
+v L "task" 2 878 "int8" `589 
+v L "msg" 2 878 "int8" `590 
+f B "rtos_msg_send" 2 878 "void(int8 task,int8 msg)" `588 
+f B "rtos_msg_read" 2 879 "int8()" `591 
+f B "rtos_msg_poll" 2 880 "int8()" `592 
+v L "task" 2 881 "int8" `594 
+f B "rtos_overrun" 2 881 "int8(int8 task)" `593 
+v L "task" 2 882 "int8" `596 
+v L "stat" 2 882 "*int8" `597 
+f B "rtos_stats" 2 882 "void(int8 task,*int8 stat)" `595  "#use timer() Prototypes:"
+f B "get_ticks" 2 885 "int8()" `598 
+f G "get_ticks" 2 886 "int16()" `599 
+f G "get_ticks" 2 887 "int32()" `600 
+v L "stream" 2 888 "int8" `602 
+f G "get_ticks" 2 888 "int8(int8 stream)" `601 
+v L "stream" 2 889 "int8" `604 
+f G "get_ticks" 2 889 "int16(int8 stream)" `603 
+v L "stream" 2 890 "int8" `606 
+f G "get_ticks" 2 890 "int32(int8 stream)" `605 
+v L "value" 2 891 "int8" `608 
+f B "set_ticks" 2 891 "void(int8 value)" `607 
+v L "value" 2 892 "int16" `610 
+f G "set_ticks" 2 892 "void(int16 value)" `609 
+v L "value" 2 893 "int32" `612 
+f G "set_ticks" 2 893 "void(int32 value)" `611 
+v L "stream" 2 894 "int8" `614 
+v L "value" 2 894 "int8" `615 
+f G "set_ticks" 2 894 "void(int8 stream,int8 value)" `613 
+v L "stream" 2 895 "int8" `614 
+v L "value" 2 895 "int16" `618 
+f G "set_ticks" 2 895 "void(int8 stream,int16 value)" `616 
+v L "stream" 2 896 "int8" `614 
+v L "value" 2 896 "int32" `621 
+f G "set_ticks" 2 896 "void(int8 stream,int32 value)" `619  "#use pwm() Prototypes:"
+f B "pwm_on" 2 899 "void()" `622 
+v L "stream" 2 900 "int8" `624 
+f G "pwm_on" 2 900 "void(int8 stream)" `623 
+f B "pwm_off" 2 901 "void()" `625 
+v L "stream" 2 902 "int8" `627 
+f G "pwm_off" 2 902 "void(int8 stream)" `626 
+v L "duty" 2 903 "int16" `629 
+f B "pwm_set_duty" 2 903 "void(int16 duty)" `628 
+v L "stream" 2 904 "int8" `631 
+v L "duty" 2 904 "int16" `632 
+f G "pwm_set_duty" 2 904 "void(int8 stream,int16 duty)" `630 
+v L "percent" 2 905 "int16" `634 
+f B "pwm_set_duty_percent" 2 905 "void(int16 percent)" `633 
+v L "stream" 2 906 "int8" `636 
+v L "percent" 2 906 "int16" `637 
+f G "pwm_set_duty_percent" 2 906 "void(int8 stream,int16 percent)" `635 
+v L "frequency" 2 907 "int32" `639 
+f B "pwm_set_frequency" 2 907 "void(int32 frequency)" `638 
+v L "stream" 2 908 "int8" `641 
+v L "frequency" 2 908 "int32" `642 
+f G "pwm_set_frequency" 2 908 "void(int8 stream,int32 frequency)" `640  "#use capture() Prototypes:"
+f B "get_capture_time" 2 911 "int16()" `643 
+v L "stream" 2 912 "int8" `645 
+f G "get_capture_time" 2 912 "int16(int8 stream)" `644 
+f B "get_capture_event" 2 913 "int8()" `646 
+v L "stream" 2 914 "int8" `648 
+f G "get_capture_event" 2 914 "int8(int8 stream)" `647  "Enviroment Prototypes:"
+c L "get_capture_event" 2 1 2 "FUNCTION"
+v L "address" 2 927 "int16" `650 
+f B "goto_address" 2 927 "void(int16 address)" `649 
+v L "label" 2 928 "int16" `652 
+f B "label_address" 2 928 "int16(int16 label)" `651  "Program Memory Prototypes:"
+v L "address" 2 931 "int16" `654 
+v L "dataptr" 2 931 "*int8" `655 
+v L "count" 2 931 "int16" `656 
+f B "read_program_memory" 2 931 "void(int16 address,*int8 dataptr,int16 count)" `653 
+v L "address" 2 932 "int16" `658 
+f B "read_program_eeprom" 2 932 "int16(int16 address)" `657 
+v L "address" 2 933 "int16" `660 
+f B "erase_program_eeprom" 2 933 "void(int16 address)" `659 
+v L "address" 2 934 "int16" `662 
+v L "dataptr" 2 934 "*int8" `663 
+v L "count" 2 934 "int16" `664 
+f B "write_program_memory" 2 934 "void(int16 address,*int8 dataptr,int16 count)" `661 
+v L "address" 2 935 "int16" `666 
+v L "data" 2 935 "int16" `667 
+f B "write_program_eeprom" 2 935 "void(int16 address,int16 data)" `665  "EEPROM Prototypes:"
+t G "__EEADDRESS__" 2 940 "int16" `668 
+v L "address" 2 945 "__EEADDRESS__" `670 
+f B "read_eeprom" 2 945 "int8(__EEADDRESS__ address)" `669 
+v L "address" 2 946 "__EEADDRESS__" `672 
+v L "value" 2 946 "int8" `673 
+f B "write_eeprom" 2 946 "void(__EEADDRESS__ address,int8 value)" `671  "#use touchpad() Prototypes:"
+v L "state" 2 949 "int8" `675 
+f B "touchpad_state" 2 949 "void(int8 state)" `674 
+f B "touchpad_getc" 2 950 "int8()" `676 
+f B "touchpad_hit" 2 951 "int8()" `677  "INT"
+c L "touchpad_hit" 2 1 4 "FUNCTION"
+v L "interrupt" 2 957 "int32" `679 
+f B "enable_interrupts" 2 957 "void(int32 interrupt)" `678 
+v L "interrupt" 2 958 "int32" `681 
+f B "disable_interrupts" 2 958 "void(int32 interrupt)" `680 
+v L "interrupt" 2 959 "int32" `683 
+f B "clear_interrupt" 2 959 "void(int32 interrupt)" `682 
+v L "interrupt" 2 960 "int32" `685 
+f B "interrupt_active" 2 960 "int8(int32 interrupt)" `684 
+v L "interrupt" 2 961 "int32" `687 
+f B "interrupt_enabled" 2 961 "int8(int32 interrupt)" `686 
+v L "source" 2 962 "int8" `689 
+v L "edge" 2 962 "int8" `690 
+f B "ext_int_edge" 2 962 "void(int8 source,int8 edge)" `688 
+v L "address" 2 963 "int16" `692 
+f B "jump_to_irs" 2 963 "void(int16 address)" `691  "Constants used in EXT_INT_EDGE() are:"
+d G "L_TO_H" 2 965 "0x40"
+d G "H_TO_L" 2 966 "0"
+d G "GLOBAL" 2 968 "0xF2C0"
+d G "PERIPH" 2 969 "0xF240"
+d G "INT_RTCC" 2 970 "0x00F220"
+d G "INT_TIMER0" 2 971 "0x00F220"
+d G "INT_TIMER1" 2 972 "0x009D01"
+d G "INT_TIMER2" 2 973 "0x009D02"
+d G "INT_TIMER3" 2 974 "0x00A002"
+d G "INT_EXT_L2H" 2 975 "0x5000F210"
+d G "INT_EXT_H2L" 2 976 "0x6000F210"
+d G "INT_EXT" 2 977 "0x00F210"
+d G "INT_EXT1_L2H" 2 978 "0x5001F008"
+d G "INT_EXT1_H2L" 2 979 "0x6001F008"
+d G "INT_EXT1" 2 980 "0x00F008"
+d G "INT_EXT2_L2H" 2 981 "0x5002F010"
+d G "INT_EXT2_H2L" 2 982 "0x6002F010"
+d G "INT_EXT2" 2 983 "0x00F010"
+d G "INT_RB" 2 984 "0x01FFF208"
+d G "INT_AD" 2 985 "0x009D40"
+d G "INT_RDA" 2 986 "0x009D20"
+d G "INT_TBE" 2 987 "0x009D10"
+d G "INT_SSP" 2 988 "0x009D08"
+d G "INT_CCP1" 2 989 "0x009D04"
+d G "INT_CCP2" 2 990 "0x00A001"
+d G "INT_BUSCOL" 2 991 "0x00A008"
+d G "INT_COMP" 2 992 "0x00A040"
+d G "INT_EEPROM" 2 993 "0x00A010"
+d G "INT_TBE2" 2 994 "0x00A310"
+d G "INT_RDA2" 2 995 "0x00A320"
+d G "INT_OSCF" 2 996 "0x00A080"
+d G "INT_HLVD" 2 997 "0x00A004"
+d G "INT_BUSCOL2" 2 998 "0x00A340"
+d G "INT_COMP2" 2 999 "0x00A020"
+d G "INT_SSP2" 2 1000 "0x00A380"
+d G "INT_TIMER4" 2 1001 "0x007D01"
+d G "INT_TIMER5" 2 1002 "0x007D02"
+d G "INT_TIMER6" 2 1003 "0x007D04"
+d G "INT_CCP3" 2 1004 "0x007A01"
+d G "INT_CCP4" 2 1005 "0x007A02"
+d G "INT_CCP5" 2 1006 "0x007A04"
+d G "INT_TMR1G" 2 1007 "0x00A301"
+d G "INT_TMR3G" 2 1008 "0x00A302"
+d G "INT_TMR5G" 2 1009 "0x00A304"
+d G "INT_CTMU" 2 1010 "0x00A308"
+d G "INT_RB4" 2 1011 "0x110F208"
+d G "INT_RB5" 2 1012 "0x120F208"
+d G "INT_RB6" 2 1013 "0x140F208"
+d G "INT_RB7" 2 1014 "0x180F208"
+D G "SPI_MODE_0" 1 51 " (SPI_L_TO_H | SPI_XMIT_L_TO_H)"
+D G "SPI_MODE_1" 1 52 " (SPI_L_TO_H)"
+D G "SPI_MODE_2" 1 53 " (SPI_H_TO_L)"
+D G "SPI_MODE_3" 1 54 " (SPI_H_TO_L | SPI_XMIT_L_TO_H)"
+C L "jump_to_irs" 1 15 6 "FUNCTION"
+V G "timerIntSay" 1 67 "int32" `715  "#define millis() timerIntSay"
+C L "jump_to_irs" 1 15 2 "FUNCTION"
+C L "jump_to_irs" 3 1 1 "*"
+C L "jump_to_irs" 3 1 1 "*"
+D G "TANIMLAMALAR_H" 3 9 ""
+D G "led0" 3 14 "PIN_B3"
+D G "JTN_PIN" 3 15 "PIN_B0"
+D G "JTN2_PIN" 3 16 "PIN_B7"
+D G "HIZ1_SENS_PIN" 3 18 "PIN_B1"
+D G "HIZ2_SENS_PIN" 3 19 "PIN_B2"
+D G "TUR1_SENS_PIN" 3 21 "PIN_B5"
+D G "TUR2_SENS_PIN" 3 22 "PIN_B4"
+D G "BTN1_PIN" 3 24 "PIN_A4"
+D G "BTN2_PIN" 3 25 "PIN_A5"
+D G "BTN3_PIN" 3 26 "PIN_E2"
+D G "BIS_BTN1_PIN" 3 28 "PIN_A2"
+D G "BIS_BTN2_PIN" 3 29 "PIN_A3"
+D G "ADC_KANAL_M2" 3 31 "0" "SENS_B"
+D G "ADC_KANAL_M1" 3 32 "1" "SENS_A"
+D G "PWM_DUTY_MAX_4_KHZ" 3 34 "500"
+D G "PWM_DUTY_MAX_2B5_KHZ" 3 35 "800"
+D G "F_MAX" 3 37 "10" "saniyedeki max tur sayýsý, buþekildse max 100Hz olur"
+D G "DELAY_OLCUM" 3 39 "10"
+D G "panel1_komut" 3 42 "(komut)fprintf(Panel1Serial,"%cc",komut)"
+D G "panel2_komut" 3 43 "(komut)fprintf(Panel2Serial,"%cc",komut)"
+D G "M1_PWM" 3 45 "10"
+D G "M2_PWM" 3 46 "11"
+D G "analogWrite" 3 48 "(_pwm_pin, _pwm_deger)                                                    if(_pwm_pin==M1_PWM) set_pwm1_duty(_pwm_deger);                          if(_pwm_pin==M2_PWM) set_pwm2_duty(_pwm_deger);"
+D G "jetonKontrol" 3 52 "(pin) if(!input(pin)){                                                                                                                    delay_ms(500);                                                     calismaJetonSay++;                                                }                                                                                                                                     if((calisma_jeton_sayisi>0 && calismaJetonSay>=calisma_jeton_sayisi))                             {                                                                             jetonAtildi=TRUE;                                                        calismaJetonSay=0;                                                       jetonSay++;                                                         }                                                                        else{                                                                         jetonAtildi=TRUE;                                                        jetonSay++;                                                              }"
+D G "JETON" 3 69 "'J'"
+D G "OYUNCU_MOD_SECIMI" 3 71 "'M'"
+D G "OYUNCU_MOD_SECIM_SONU" 3 72 "'m'"
+D G "OYUNCU_HIZ_VERI" 3 74 "'V'"
+D G "OYUNCU2_HIZ_VERI" 3 75 "'v'"
+D G "OYUNCU_TEKERLEK_DONME_SAYISI" 3 77 "'D'"
+D G "OYUNCU2_TEKERLEK_DONME_SAYISI" 3 78 "'d'"
+D G "OYUNCU_TUR_SAYISI" 3 80 "'T'"
+D G "OYUNCU_YARIS_SIRA1" 3 82 "'1'"
+D G "OYUNCU_YARIS_SIRA2" 3 83 "'2'"
+D G "OYUNCU_YARIS_SIRA0" 3 84 "'0'"
+D G "OYUNCU1" 3 86 "'3'"
+D G "OYUNCU2" 3 87 "'4'"
+D G "SISTEM" 3 88 "'5'"
+D G "OYUNCU_BISIKLET_SECIMI" 3 90 "'B'"
+D G "OYUNCU1_SISTEM" 3 91 "'X'"
+D G "OYUNCU1_OYUNCU2" 3 92 "'x'"
+D G "JETON_CHAR" 3 94 "'J'"
+D G "JETON_AT" 3 95 "'A'"
+D G "OYUN_MOD_SECME_SURESI" 3 97 "5000"
+D G "MOD_SECILMEDI" 3 99 " (-1)"
+D G "BAY_MOD" 3 100 "0"
+D G "BAYAN_MOD" 3 101 "1"
+D G "COCUK_MOD" 3 102 "2"
+D G "OYUN_OYNANAN_SURE" 3 104 "'O'"
+D G "OYUN_BITTI" 3 105 "'E'"
+D G "BOS_ANIM_EKRANI" 3 107 "'K'"
+D G "ZAMAN_SAY" 3 109 "'Z'"
+D G "MOTOR_YOK" 3 110 "'Q'"
+D G "MOTOR_VAR" 3 111 "'q'"
+D G "BISIKLET_MAX_HIZ" 3 114 "71"
+D G "PIST_UZUNLUK" 3 116 "8.51f"
+D G "wav_atKisnemesi" 3 119 "1"
+D G "wav_atKosmasi" 3 120 "2"
+D G "wav_suDamlasi" 3 121 "3"
+D G "wav_heySesi" 3 122 "4"
+D G "wav_alkisSesi" 3 123 "5"
+D G "wav_oyunBitti" 3 124 "6"
+D G "wav_getReady" 3 125 "7"
+D G "wav_whoosh" 3 126 "8"
+D G "wav_jeton" 3 127 "9"
+D G "wav_remix" 3 128 "10"
+D G "wav_remix2" 3 129 "11"
+D G "wav_waterDrop" 3 130 "12"
+D G "mp3_adele_Rolling" 3 131 "14"
+D G "wav_duduk_basla" 3 132 "15"
+D G "wav_ding" 3 133 "16"
+D G "mp3_mars" 3 134 "17"
+D G "mp3_getlowve_araba" 3 135 "18"
+D G "mp3_beep_uyari" 3 136 "19"
+D G "mp3_adele_Rolling" 3 140 "20"
+D G "mp3_anitta" 3 141 "21"
+D G "mp3_love_lo" 3 142 "22"
+D G "mp3_remix" 3 143 "23"
+D G "mp3_dejavu" 3 144 "24"
+D G "mp3_rain" 3 145 "25"
+D G "mp3_aweli" 3 146 "26"
+D G "mp3_buton" 3 148 "27"
+D G "mp3_buton2" 3 149 "28"
+D G "wav_remix_sure" 3 151 "200000" "(3*60+20)*1000  //3:20 mS degeri...."
+D G "wav_atKisnemesi_sure" 3 152 "1500"
+D G "wav_atKosmasi_sure" 3 153 "2000"
+D G "wav_whoosh_sure" 3 154 "300" "350"
+C L "jump_to_irs" 3 1 1 "FUNCTION"
+C L "jump_to_irs" 0 9 1 "FUNCTION"
+D G "_STDLIB" 4 12 ""
+D G "RAND_MAX" 4 19 "32767" "The value of which is the maximum value"
+D G "LONG_POINTERS" 4 25 "1"
+T G "div_t" 4 33 "{sint8 quot,sint8 rem}" `719 
+T G "ldiv_t" 4 38 "{sint16 quot,sint16 rem}" `723  "(C) Copyright 1996,2003 Custom Computer Services           ////"
+D G "_STDDEF" 5 13 ""
+D G "ptrdiff_t" 5 18 "unsigned int16"
+D G "size_t" 5 24 "unsigned int16"
+D G "wchar_t" 5 26 "char"
+D G "NULL" 5 27 "0"
+D G "offsetof" 5 29 "(s,f) (offsetofbit(s,f)/8)"
+C L "jump_to_irs" 4 43 2 "FUNCTION"
+C L "jump_to_irs" 4 46 1 "*"
+C L "jump_to_irs" 4 46 1 "*"
+V L "s" 4 50 "*int8" `725 
+f G "atoi" 4 50 "sint8(*int8 s)" `724  "Syntax: signed int32  atoi32(char * s)"
+V L "s" 4 58 "*int8" `727 
+f G "atoi32" 4 58 "sint32(*int8 s)" `726  "Syntax: char *  itoa(signed int32 num, int8 base, char * s)"
+C L "atoi32" 4 46 2 "FUNCTION"
+V L "num" 4 79 "sint32" `729 
+V L "base" 4 79 "int8" `730 
+V L "s" 4 79 "*int8" `731 
+f G "itoa" 4 79 "*int8(sint32 num,int8 base,*int8 s)" `728  "Standard template: signed int16  atol(char * s)"
+C L "itoa" 4 81 1 "*"
+C L "itoa" 4 81 1 "*"
+V L "s" 4 85 "*int8" `733 
+f G "atol" 4 85 "sint16(*int8 s)" `732  "Standard template: int16 strtoul(char * s,char *endptr,signed int base)"
+C L "atol" 4 87 1 "*"
+C L "atol" 4 87 1 "*"
+C L "atol" 4 87 1 "*"
+C L "atol" 4 87 1 "*"
+V L "s" 4 93 "*int8" `735 
+V L "endptr" 4 93 "*int8" `736 
+V L "base" 4 93 "sint8" `737 
+f G "strtol" 4 93 "sint16(*int8 s,*int8 endptr,sint8 base)" `734  "Standard template: int16 strtoul(char * s,char *endptr,signed int base)"
+C L "strtol" 4 95 1 "*"
+C L "strtol" 4 95 1 "*"
+C L "strtol" 4 95 1 "*"
+C L "strtol" 4 95 1 "*"
+V L "s" 4 101 "*int8" `739 
+V L "endptr" 4 101 "*int8" `740 
+V L "base" 4 101 "sint8" `741 
+f G "strtoul" 4 101 "int16(*int8 s,*int8 endptr,sint8 base)" `738  "Standart template: float strtof(char * s,char *endptr)"
+C L "strtoul" 4 95 2 "FUNCTION"
+C L "strtoul" 4 103 1 "*"
+C L "strtoul" 4 103 1 "*"
+C L "strtoul" 4 103 1 "*"
+V L "s" 4 110 "*int8" `743 
+V L "endptr" 4 110 "*int8" `744 
+f G "strtof" 4 110 "float(*int8 s,*int8 endptr)" `742  "provided for compatibility"
+D G "strtof48" 4 116 "(s, e) strtof(s, e)"
+D G "strtod" 4 117 "(s, e) strtof(s, e)"
+C L "strtof" 4 103 1 "FUNCTION"
+C L "strtof" 4 120 1 "*"
+D G "atof" 4 124 "(s)   strtof(s, 0)"
+C L "strtof" 4 120 1 "FUNCTION"
+C L "strtof" 4 143 1 "*"
+C L "strtof" 4 143 1 "*"
+C L "strtof" 4 143 1 "*"
+V L "s" 4 149 "*int8" `746 
+f G "atoe" 4 149 "float(*int8 s)" `745  "Pseudo-random sequence generation functions"
+C L "atoe" 4 143 1 "FUNCTION"
+C L "atoe" 4 160 1 "*"
+C L "atoe" 4 160 1 "*"
+C L "atoe" 4 160 1 "*"
+C L "atoe" 4 160 1 "*"
+C L "atoe" 4 160 1 "*"
+f G "rand" 4 169 "int16()" `747  "The srand function uses the argument as a seed for a new sequence of"
+C L "rand" 4 171 1 "*"
+C L "rand" 4 171 1 "*"
+C L "rand" 4 171 1 "*"
+C L "rand" 4 171 1 "*"
+C L "rand" 4 171 1 "*"
+C L "rand" 4 171 1 "*"
+C L "rand" 4 171 1 "*"
+C L "rand" 4 171 1 "*"
+C L "rand" 4 171 1 "*"
+C L "rand" 4 171 1 "*"
+C L "rand" 4 171 1 "*"
+C L "rand" 4 171 1 "*"
+C L "rand" 4 171 1 "*"
+C L "rand" 4 171 1 "*"
+C L "rand" 4 171 1 "*"
+V L "seed" 4 191 "int32" `749 
+f G "srand" 4 191 "void(int32 seed)" `748  "Memory management functions"
+C L "srand" 4 171 3 "FUNCTION"
+V L "string" 4 205 "*int8" `751 
+f G "system" 4 205 "sint8(*int8 string)" `750  "Searching and sorting utilities"
+C L "system" 4 171 1 "FUNCTION"
+C L "system" 4 211 1 "*"
+C L "system" 4 211 1 "*"
+C L "system" 4 211 1 "*"
+C L "system" 4 211 1 "*"
+C L "system" 4 211 1 "*"
+C L "system" 4 211 1 "*"
+C L "system" 4 211 1 "*"
+C L "system" 4 211 1 "*"
+C L "system" 4 211 1 "*"
+C L "system" 4 211 1 "*"
+C L "system" 4 211 4 "*"
+C L "system" 4 229 1 "*"
+C L "system" 4 229 1 "*"
+C L "system" 4 229 1 "*"
+C L "system" 4 229 1 "*"
+C L "system" 4 229 1 "*"
+C L "system" 4 229 1 "*"
+C L "system" 4 229 1 "*"
+C L "system" 4 229 1 "*"
+D G "labs" 4 249 "abs"
+V L "numer" 4 251 "sint8" `753 
+V L "denom" 4 251 "sint8" `754 
+f G "div" 4 251 "div_t(sint8 numer,sint8 denom)" `752 
+V L "numer" 4 252 "sint16" `756 
+V L "denom" 4 252 "sint16" `757 
+f G "ldiv" 4 252 "ldiv_t(sint16 numer,sint16 denom)" `755  "Multibyte character functions"
+C L "ldiv" 4 229 4 "FUNCTION"
+C L "ldiv" 5 2 7 "FUNCTION"
+D G "_STRING" 6 12 ""
+C L "ldiv" 5 2 7 "FUNCTION"
+D G "_CTYPE" 7 12 ""
+D G "islower" 7 14 "(x)  isamong(x,"abcdefghijklmnopqrstuvwxyz")"
+D G "isupper" 7 15 "(x)  isamong(x,"ABCDEFGHIJKLMNOPQRSTUVWXYZ")"
+D G "isalnum" 7 16 "(x)  isamong(x,"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz")"
+D G "isalpha" 7 17 "(x)  isamong(x,"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz")"
+D G "isdigit" 7 18 "(x)  isamong(x,"0123456789")"
+D G "isspace" 7 19 "(x)  ((x)==' ')"
+D G "isxdigit" 7 20 "(x) isamong(x,"0123456789ABCDEFabcdef")"
+D G "iscntrl" 7 21 "(x)  ((x)<' ')"
+D G "isprint" 7 22 "(x)  ((x)>=' ')"
+D G "isgraph" 7 23 "(x)  ((x)>' ')"
+D G "ispunct" 7 24 "(x)  (((x)>' ')&&!isalnum(x))"
+C L "ldiv" 6 19 10 "FUNCTION"
+V L "s1" 6 34 "*int8" `759 
+V L "s2" 6 34 "*int8" `760 
+V L "n" 6 34 "int16" `761 
+F G "memmove" 6 35 "*int8(*int8 s1,*int8 s2,int16 n)" `758 
+V L "sc1" 6 36 "*int8" `762 
+V L "sc2" 6 37 "*int8" `763 
+D G "strcopy" 6 54 "strcpy"
+C L "strncpy" 6 19 4 "FUNCTION"
+V L "s1" 6 61 "*int8" `765 
+V L "s2" 6 61 "*int8" `766 
+V L "n" 6 61 "int16" `767 
+F G "strncpy" 6 62 "*int8(*int8 s1,*int8 s2,int16 n)" `764 
+V L "s" 6 63 "*int8" `768 
+C L "strcat" 6 19 3 "FUNCTION"
+V L "s1" 6 78 "*int8" `770 
+V L "s2" 6 78 "*int8" `771 
+F G "strcat" 6 79 "*int8(*int8 s1,*int8 s2)" `769 
+V L "s" 6 80 "*int8" `772 
+C L "strncat" 6 19 2 "FUNCTION"
+V L "s1" 6 96 "*int8" `774 
+V L "s2" 6 96 "*int8" `775 
+V L "n" 6 96 "int16" `776 
+F G "strncat" 6 97 "*int8(*int8 s1,*int8 s2,int16 n)" `773 
+V L "s" 6 98 "*int8" `777 
+C L "memcmp" 6 19 3 "FUNCTION"
+V L "s1" 6 120 "*int8" `779 
+V L "s2" 6 120 "*int8" `780 
+V L "n" 6 120 "int16" `781 
+F G "memcmp" 6 121 "sint8(*int8 s1,*int8 s2,int16 n)" `778 
+V L "su1" 6 122 "*int8" `782 
+V L "su2" 6 122 "*int8" `783 
+C L "strcmp" 6 19 2 "FUNCTION"
+V L "s1" 6 134 "*int8" `785 
+V L "s2" 6 134 "*int8" `786 
+F G "strcmp" 6 135 "sint8(*int8 s1,*int8 s2)" `784 
+C L "strcoll" 6 19 2 "FUNCTION"
+V L "s1" 6 144 "*int8" `788 
+V L "s2" 6 144 "*int8" `789 
+F G "strcoll" 6 145 "sint8(*int8 s1,*int8 s2)" `787 
+C L "strncmp" 6 19 4 "FUNCTION"
+V L "s1" 6 157 "*int8" `791 
+V L "s2" 6 157 "*int8" `792 
+V L "n" 6 157 "int16" `793 
+F G "strncmp" 6 158 "sint8(*int8 s1,*int8 s2,int16 n)" `790 
+C L "strxfrm" 6 19 3 "FUNCTION"
+V L "s1" 6 169 "*int8" `795 
+V L "s2" 6 169 "*int8" `796 
+V L "n" 6 169 "int16" `797 
+F G "strxfrm" 6 170 "int16(*int8 s1,*int8 s2,int16 n)" `794 
+V L "s" 6 171 "*int8" `798 
+V L "n1" 6 172 "int8" `799 
+C L "memchr" 6 19 3 "FUNCTION"
+V L "s" 6 191 "*int8" `801 
+V L "c" 6 191 "int8" `802 
+V L "n" 6 191 "int16" `803 
+F G "memchr" 6 192 "*int8(*int8 s,int8 c,int16 n)" `800 
+V L "uc" 6 193 "int8" `804 
+V L "su" 6 194 "*int8" `805 
+C L "strchr" 6 19 2 "FUNCTION"
+V L "s" 6 205 "*int8" `807 
+V L "c" 6 205 "int8" `808 
+F G "strchr" 6 206 "*int8(*int8 s,int8 c)" `806 
+C L "strcspn" 6 19 4 "FUNCTION"
+V L "s1" 6 217 "*int8" `810 
+V L "s2" 6 217 "*int8" `811 
+F G "strcspn" 6 218 "int8(*int8 s1,*int8 s2)" `809 
+V L "sc1" 6 219 "*int8" `812 
+V L "sc2" 6 219 "*int8" `813 
+C L "strpbrk" 6 19 4 "FUNCTION"
+V L "s1" 6 232 "*int8" `815 
+V L "s2" 6 232 "*int8" `816 
+F G "strpbrk" 6 233 "*int8(*int8 s1,*int8 s2)" `814 
+V L "sc1" 6 234 "*int8" `817 
+V L "sc2" 6 234 "*int8" `818 
+C L "strrchr" 6 19 2 "FUNCTION"
+V L "s" 6 247 "*int8" `820 
+V L "c" 6 247 "int8" `821 
+F G "strrchr" 6 248 "*int8(*int8 s,int8 c)" `819 
+V L "p" 6 249 "*int8" `822 
+C L "strspn" 6 19 2 "FUNCTION"
+V L "s1" 6 262 "*int8" `824 
+V L "s2" 6 262 "*int8" `825 
+F G "strspn" 6 263 "int8(*int8 s1,*int8 s2)" `823 
+V L "sc1" 6 264 "*int8" `826 
+V L "sc2" 6 264 "*int8" `827 
+C L "strstr" 6 19 6 "FUNCTION"
+V L "s1" 6 281 "*int8" `829 
+V L "s2" 6 281 "*int8" `830 
+F G "strstr" 6 282 "*int8(*int8 s1,*int8 s2)" `828 
+V L "s" 6 283 "*int8" `831 
+V L "t" 6 283 "*int8" `832 
+C L "strtok" 6 19 13 "FUNCTION"
+V L "s1" 6 320 "*int8" `834 
+V L "s2" 6 320 "*int8" `835 
+F G "strtok" 6 321 "*int8(*int8 s1,*int8 s2)" `833 
+V L "beg" 6 322 "*int8" `836 
+V L "end" 6 322 "*int8" `837 
+V L "save" 6 323 "*int8" `838 
+C L "strlen" 6 19 6 "FUNCTION"
+V L "s" 6 369 "*int8" `840 
+F G "strlen" 6 370 "int8(*int8 s)" `839 
+V L "sc" 6 371 "*int8" `841 
+C L "stricmp" 6 19 2 "FUNCTION"
+V L "s1" 6 380 "*int8" `843 
+V L "s2" 6 380 "*int8" `844 
+F G "stricmp" 6 381 "sint8(*int8 s1,*int8 s2)" `842 
+C L "strlwr" 6 19 3 "FUNCTION"
+V L "s" 6 394 "*int8" `848 
+F G "strlwr" 6 395 "*int8(*int8 s)" `847 
+V L "p" 6 396 "*int8" `849 
+C L "strupr" 6 19 3 "FUNCTION"
+V L "s" 6 408 "*int8" `851 
+F G "strupr" 6 409 "*int8(*int8 s)" `850 
+V L "p" 6 410 "*int8" `852 
+V L "numer" 4 274 "sint8" `753 
+V L "denom" 4 274 "sint8" `855 
+F G "div" 4 275 "div_t(sint8 numer,sint8 denom)" `752 
+V L "val" 4 276 "div_t" `853 
+V L "numer" 4 282 "sint16" `756 
+V L "denom" 4 282 "sint16" `862 
+F G "ldiv" 4 283 "ldiv_t(sint16 numer,sint16 denom)" `755 
+V L "val" 4 284 "ldiv_t" `860 
+V L "s" 4 361 "*int8" `868 
+F G "atoe" 4 362 "float(*int8 s)" `745 
+V L "pow10" 4 363 "float" `867 
+V L "result" 4 364 "float" `868 
+V L "sign" 4 365 "int8" `869 
+V L "expsign" 4 366 "int8" `870 
+V L "c" 4 367 "int8" `871 
+V L "ptr" 4 368 "int8" `872 
+V L "i" 4 369 "int8" `873 
+V L "exp" 4 370 "float" `874 
+V L "expcnt" 4 371 "int8" `875 
+C L "atoe" 4 397 1 "FUNCTION"
+V L "s" 4 429 "*int8" `888 
+F G "atoi" 4 430 "sint8(*int8 s)" `724 
+V L "result" 4 431 "sint8" `887 
+V L "sign" 4 432 "int8" `888 
+V L "base" 4 432 "int8" `889 
+V L "index" 4 432 "int8" `890 
+V L "c" 4 433 "int8" `891 
+C L "atoi" 4 397 1 "FUNCTION"
+C L "atoi" 4 397 1 "FUNCTION"
+C L "atoi" 4 397 1 "FUNCTION"
+C L "atoi" 4 397 1 "FUNCTION"
+C L "atoi" 4 397 1 "FUNCTION"
+C L "atoi" 4 397 1 "FUNCTION"
+V L "s" 4 498 "*int8" `893 
+F G "atol" 4 499 "sint16(*int8 s)" `732 
+V L "result" 4 500 "sint16" `892 
+V L "sign" 4 501 "int8" `893 
+V L "base" 4 501 "int8" `894 
+V L "index" 4 501 "int8" `895 
+V L "c" 4 502 "int8" `896 
+C L "atol" 4 397 1 "FUNCTION"
+C L "atol" 4 397 1 "FUNCTION"
+C L "atol" 4 397 1 "FUNCTION"
+C L "atol" 4 397 1 "FUNCTION"
+C L "mult_with10" 4 397 1 "FUNCTION"
+V L "num" 4 565 "int32" `898 
+F G "mult_with10" 4 566 "sint32(int32 num)" `897 
+V L "s" 4 571 "*int8" `900 
+F G "atoi32" 4 572 "sint32(*int8 s)" `726 
+V L "result" 4 573 "sint32" `899 
+V L "sign" 4 574 "int8" `900 
+V L "base" 4 574 "int8" `901 
+V L "index" 4 574 "int8" `902 
+V L "c" 4 575 "int8" `903 
+C L "atoi32" 4 397 1 "FUNCTION"
+C L "atoi32" 4 397 1 "FUNCTION"
+C L "atoi32" 4 397 1 "FUNCTION"
+C L "atoi32" 4 397 1 "FUNCTION"
+C L "atoi32" 4 397 1 "FUNCTION"
+V L "num" 4 770 "sint32" `729 
+V L "base" 4 770 "int8" `730 
+V L "s" 4 770 "*int8" `907 
+F G "itoa" 4 771 "*int8(sint32 num,int8 base,*int8 s)" `728 
+V L "temp" 4 772 "int32" `904 
+V L "i" 4 773 "int8" `905 
+V L "sign" 4 773 "int8" `906 
+V L "cnt" 4 773 "int8" `907 
+V L "c" 4 774 "int8" `908 
+C L "itoa" 4 397 1 "FUNCTION"
+C L "itoa" 4 397 1 "FUNCTION"
+C L "itoa" 4 397 1 "FUNCTION"
+C L "itoa" 4 397 1 "FUNCTION"
+C L "itoa" 4 397 1 "FUNCTION"
+V L "s" 4 885 "*int8" `743 
+V L "endptr" 4 885 "*int8" `917 
+F G "strtof" 4 886 "float(*int8 s,*int8 endptr)" `742 
+V L "pow10" 4 887 "float" `915 
+V L "result" 4 888 "float" `916 
+V L "skip" 4 889 "int1" `917 
+V L "sign" 4 889 "int1" `918 
+V L "point" 4 889 "int1" `919 
+V L "c" 4 890 "int8" `920 
+V L "ptr" 4 891 "int8" `921 
+V L "s" 4 1103 "*int8" `739 
+V L "endptr" 4 1103 "*int8" `740 
+V L "base" 4 1103 "sint8" `926 
+F G "strtoul" 4 1104 "int16(*int8 s,*int8 endptr,sint8 base)" `738 
+V L "sc" 4 1105 "*int8" `923 
+V L "s1" 4 1105 "*int8" `924 
+V L "sd" 4 1105 "*int8" `925 
+V L "x" 4 1106 "int16" `926 
+V L "sign" 4 1107 "int8" `927 
+V L "digits" 4 1108 "int8[1]" `928 
+C L "strtoul" 4 397 1 "FUNCTION"
+C L "strtoul" 4 397 1 "FUNCTION"
+C L "strtoul" 4 397 1 "FUNCTION"
+V L "s" 4 1165 "*int8" `735 
+V L "endptr" 4 1165 "*int8" `736 
+V L "base" 4 1165 "sint8" `933 
+F G "strtol" 4 1166 "sint16(*int8 s,*int8 endptr,sint8 base)" `734 
+V L "sc" 4 1167 "*int8" `930 
+V L "s1" 4 1167 "*int8" `931 
+V L "sd" 4 1167 "*int8" `932 
+V L "x" 4 1168 "sint16" `933 
+V L "sign" 4 1169 "int8" `934 
+V L "digits" 4 1170 "int8[1]" `935 
+C L "strtol" 4 397 1 "FUNCTION"
+C L "strtol" 4 397 1 "FUNCTION"
+C L "strtol" 4 397 1 "FUNCTION"
+V L "string" 4 1228 "*int8" `938 
+F G "system" 4 1229 "sint8(*int8 string)" `750 
+V L "s" 4 1233 "*int8" `938 
+V L "n" 4 1233 "int16" `939 
+F G "mblen" 4 1234 "int8(*int8 s,int16 n)" `937 
+V L "pwc" 4 1238 "*int8" `941 
+V L "s" 4 1238 "*int8" `942 
+V L "n" 4 1238 "int16" `943 
+F G "mbtowc" 4 1239 "int8(*int8 pwc,*int8 s,int16 n)" `940 
+V L "s" 4 1244 "*int8" `945 
+V L "wchar" 4 1244 "int8" `946 
+F G "wctomb" 4 1245 "int8(*int8 s,int8 wchar)" `944 
+V L "pwcs" 4 1250 "*int8" `948 
+V L "s" 4 1250 "*int8" `949 
+V L "n" 4 1250 "int16" `950 
+F G "mbstowcs" 4 1251 "int16(*int8 pwcs,*int8 s,int16 n)" `947 
+V L "s" 4 1256 "*int8" `952 
+V L "pwcs" 4 1256 "*int8" `953 
+V L "n" 4 1256 "int16" `954 
+F G "wcstombs" 4 1257 "int16(*int8 s,*int8 pwcs,int16 n)" `951 
+V G "_Randseed" 4 1266 "int32" `955 
+F G "rand" 4 1269 "int16()" `747 
+V L "seed" 4 1274 "int32" `960 
+F G "srand" 4 1275 "void(int32 seed)" `748 
+V L "p1" 4 1284 "*int8" `960 
+V L "p2" 4 1284 "*int8" `961 
+T G "*_Cmpfun" 4 1284 "sint8(*int8 p1,*int8 p2)" `959 
+V L "qdata" 4 1291 "*int8" `964 
+V L "qitems" 4 1291 "int8" `965 
+V L "qsize" 4 1291 "int8" `966 
+V L "cmp" 4 1291 "_Cmpfun" `967 
+F G "qsort" 4 1291 "void(*int8 qdata,int8 qitems,int8 qsize,_Cmpfun cmp)" `963 
+V L "m" 4 1292 "int8" `968 
+V L "j" 4 1292 "int8" `969 
+V L "i" 4 1292 "int8" `970 
+V L "l" 4 1292 "int8" `971 
+V L "done" 4 1293 "int1" `972 
+V L "t" 4 1294 "int8[16]" `973 
+V L "key" 4 1319 "*int8" `976 
+V L "base" 4 1319 "*int8" `977 
+V L "num" 4 1319 "int16" `978 
+V L "width" 4 1319 "int16" `979 
+V L "cmp" 4 1319 "_Cmpfun" `980 
+F G "bsearch" 4 1320 "*int8(*int8 key,*int8 base,int16 num,int16 width,_Cmpfun cmp)" `975 
+V L "p" 4 1321 "*int8" `981 
+V L "q" 4 1321 "*int8" `982 
+V L "n" 4 1322 "int16" `983 
+V L "pivot" 4 1323 "int16" `984 
+V L "val" 4 1324 "sint8" `985 
+C L "bsearch" 4 397 1 "FUNCTION"
+D G "MATH_H" 8 30 ""
+D G "PI" 8 35 "3.1415926535897932"
+D G "SQRT2" 8 38 "1.4142135623730950"
+C L "CEIL_FLOOR" 8 2 3 "FUNCTION"
+V L "x" 8 45 "float" `990 
+V L "n" 8 45 "int8" `991 
+F G "CEIL_FLOOR" 8 46 "float(float x,int8 n)" `989 
+V L "y" 8 47 "float" `992 
+V L "res" 8 47 "float" `993 
+V L "l" 8 48 "int16" `994 
+V L "s" 8 49 "int1" `995 
+C L "floor" 8 2 5 "FUNCTION"
+V L "x" 8 207 "float" `1002 
+F G "floor" 8 208 "float(float x)" `1001 
+C L "ceil" 8 2 5 "FUNCTION"
+V L "x" 8 233 "float" `1004 
+F G "ceil" 8 234 "float(float x)" `1003 
+D G "fabs" 8 259 "abs"
+C L "fmod" 8 2 6 "FUNCTION"
+V L "x" 8 271 "float" `1006 
+V L "y" 8 271 "float" `1007 
+F G "fmod" 8 272 "float(float x,float y)" `1005 
+V L "i" 8 273 "float" `1008 
+D G "LN2" 8 334 "0.6931471805599453"
+D G "LN2_INV" 8 335 "1.4426950408889634073"
+V G "pe" 8 337 "[6]" `1009 
+V L "x" 8 341 "float" `1013 
+F G "exp" 8 342 "float(float x)" `1012 
+V L "y" 8 343 "float" `1014 
+V L "res" 8 343 "float" `1015 
+V L "r" 8 343 "float" `1016 
+V L "n" 8 347 "sint8" `1017 
+V L "s" 8 348 "int1" `1018 
+C L "exp" 8 2 1 "FUNCTION"
+V G "pl" 8 525 "[4]" `1021 
+V G "ql" 8 526 "[4]" `1024 
+C L "log" 8 2 3 "FUNCTION"
+V L "x" 8 534 "float" `1028 
+F G "log" 8 535 "float(float x)" `1027 
+V L "y" 8 536 "float" `1029 
+V L "res" 8 536 "float" `1030 
+V L "r" 8 536 "float" `1031 
+V L "y2" 8 536 "float" `1032 
+V L "n" 8 540 "sint8" `1033 
+C L "log" 8 2 1 "FUNCTION"
+D G "LN10" 8 758 "2.3025850929940456"
+D G "LN10_INV" 8 759 "0.4342944819032518276"
+C L "log10" 8 2 3 "FUNCTION"
+V L "x" 8 767 "float" `1035 
+F G "log10" 8 768 "float(float x)" `1034 
+V L "r" 8 769 "float" `1036 
+C L "modf" 8 2 8 "FUNCTION"
+V L "value" 8 808 "float" `1038 
+V L "iptr" 8 808 "*float" `1039 
+F G "modf" 8 809 "float(float value,*float iptr)" `1037 
+C L "pwr" 8 2 6 "FUNCTION"
+V L "x" 8 836 "float" `1041 
+V L "y" 8 836 "float" `1042 
+F G "pwr" 8 837 "float(float x,float y)" `1040 
+C L "pow" 8 2 7 "FUNCTION"
+V L "x" 8 899 "float" `1044 
+V L "y" 8 899 "float" `1045 
+F G "pow" 8 900 "float(float x,float y)" `1043 
+C L "sqrt" 8 2 5 "FUNCTION"
+V L "x" 8 960 "float" `1047 
+F G "sqrt" 8 961 "float(float x)" `1046 
+V L "y" 8 962 "float" `1048 
+V L "res" 8 962 "float" `1049 
+V L "p" 8 966 "*int8" `1050 
+D G "PI_DIV_BY_TWO_INV" 8 1155 "0.63661977236758134"
+D G "PI_DIV_BY_TWO" 8 1159 "1.5707963267948966"
+D G "TWOBYPI" 8 1163 "0.6366197723675813"
+C L "cos" 8 2 3 "FUNCTION"
+V L "x" 8 1171 "float" `1052 
+F G "cos" 8 1172 "float(float x)" `1051 
+V L "y" 8 1173 "float" `1053 
+V L "t" 8 1173 "float" `1054 
+V L "t2" 8 1173 "float" `1055 
+V L "quad" 8 1174 "int8" `1056 
+V L "i" 8 1174 "int8" `1057 
+V L "frac" 8 1175 "float" `1058 
+V L "p" 8 1176 "float[5]" `1059  "by the series definition for cosine"
+C L "cos" 8 2 1 "FUNCTION"
+C L "cos" 8 2 2 "FUNCTION"
+C L "cos" 8 2 1 "FUNCTION"
+C L "cos" 8 2 1 "FUNCTION"
+C L "cos" 8 2 1 "FUNCTION"
+C L "cos" 8 2 1 "FUNCTION"
+C L "cos" 8 2 1 "FUNCTION"
+C L "cos" 8 2 1 "FUNCTION"
+C L "sin" 8 2 5 "FUNCTION"
+V L "x" 8 1312 "float" `1061 
+F G "sin" 8 1313 "float(float x)" `1060 
+C L "tan" 8 2 5 "FUNCTION"
+V L "x" 8 1338 "float" `1063 
+F G "tan" 8 1339 "float(float x)" `1062 
+V L "c" 8 1340 "float" `1064 
+V L "s" 8 1340 "float" `1065 
+V G "pas" 8 1378 "[3]" `1066 
+V G "qas" 8 1379 "[3]" `1069 
+V L "x" 8 1381 "float" `1073 
+V L "n" 8 1381 "int8" `1074 
+F G "ASIN_COS" 8 1382 "float(float x,int8 n)" `1072 
+V L "y" 8 1383 "float" `1075 
+V L "res" 8 1383 "float" `1076 
+V L "r" 8 1383 "float" `1077 
+V L "y2" 8 1383 "float" `1078 
+V L "s" 8 1384 "int1" `1079 
+C L "ASIN_COS" 8 2 1 "FUNCTION"
+C L "ASIN_COS" 8 2 1 "FUNCTION"
+C L "asin" 8 2 5 "FUNCTION"
+V L "x" 8 1539 "float" `1081 
+F G "asin" 8 1540 "float(float x)" `1080 
+V L "r" 8 1541 "float" `1082 
+C L "acos" 8 2 5 "FUNCTION"
+V L "x" 8 1573 "float" `1084 
+F G "acos" 8 1574 "float(float x)" `1083 
+V L "r" 8 1575 "float" `1085 
+V G "pat" 8 1601 "[4]" `1086 
+V G "qat" 8 1602 "[4]" `1089 
+C L "atan" 8 2 3 "FUNCTION"
+V L "x" 8 1610 "float" `1093 
+F G "atan" 8 1611 "float(float x)" `1092 
+V L "y" 8 1612 "float" `1094 
+V L "res" 8 1612 "float" `1095 
+V L "r" 8 1612 "float" `1096 
+V L "s" 8 1613 "int1" `1097 
+V L "flag" 8 1613 "int1" `1098 
+C L "atan" 8 2 1 "FUNCTION"
+C L "atan2" 8 2 7 "FUNCTION"
+V L "y" 8 1753 "float" `1100 
+V L "x" 8 1753 "float" `1101 
+F G "atan2" 8 1754 "float(float y,float x)" `1099 
+V L "z" 8 1755 "float" `1102 
+V L "sign" 8 1756 "int1" `1103 
+V L "quad" 8 1757 "int8" `1104 
+C L "atan2" 8 2 1 "FUNCTION"
+C L "atan2" 8 2 1 "FUNCTION"
+C L "cosh" 8 2 7 "FUNCTION"
+V L "x" 8 1975 "float" `1107 
+F G "cosh" 8 1976 "float(float x)" `1106 
+C L "sinh" 8 2 6 "FUNCTION"
+V L "x" 8 2002 "float" `1109 
+F G "sinh" 8 2003 "float(float x)" `1108 
+C L "tanh" 8 2 6 "FUNCTION"
+V L "x" 8 2032 "float" `1111 
+F G "tanh" 8 2033 "float(float x)" `1110 
+D G "LOG2" 8 2062 ".30102999566398119521"
+D G "LOG2_INV" 8 2063 "3.32192809488736234787"
+V L "x" 8 2064 "float" `1113 
+V L "exp" 8 2064 "*sint8" `1114 
+F G "frexp" 8 2065 "float(float x,*sint8 exp)" `1112 
+V L "res" 8 2066 "float" `1115 
+V L "sign" 8 2067 "int1" `1116 
+C L "ldexp" 8 2 6 "FUNCTION"
+V L "value" 8 2209 "float" `1118 
+V L "exp" 8 2209 "sint8" `1119 
+F G "ldexp" 8 2210 "float(float value,sint8 exp)" `1117 
+D G "LCD_DB4" 9 7 "PIN_D0" "PIN_A0"
+D G "LCD_DB5" 9 8 "PIN_D1" "PIN_A1"
+D G "LCD_DB6" 9 9 "PIN_D2" "PIN_A2"
+D G "LCD_DB7" 9 10 "PIN_D3" "PIN_A3"
+D G "LCD_E" 9 12 "PIN_D5" "PIN_D5"
+D G "LCD_RS" 9 13 "PIN_D4"
+D G "lcd_type" 9 25 "2" "0=5x7, 1=5x10, 2=2 lines"
+D G "lcd_line_two" 9 26 "0x40" "LCD RAM address for the 2nd line"
+V G "LCD_INIT_STRING" 9 29 "[4]" `1120 
+V L "nibble" 9 39 "int8" `1124 
+F G "lcd_send_nibble" 9 40 "void(int8 nibble)" `1123  "Note:  !! converts an integer expression"
+C L "lcd_send_nibble" 9 1 1 "FUNCTION"
+C L "lcd_send_byte" 9 1 6 "FUNCTION"
+V L "address" 9 109 "int8" `1126 
+V L "n" 9 109 "int8" `1127 
+F G "lcd_send_byte" 9 110 "void(int8 address,int8 n)" `1125 
+F G "lcd_init" 9 139 "void()" `1128 
+V L "i" 9 140 "int8" `1129 
+C L "lcd_init" 9 1 6 "FUNCTION"
+V L "x" 9 179 "int8" `1131 
+V L "y" 9 179 "int8" `1132 
+F G "lcd_gotoxy" 9 180 "void(int8 x,int8 y)" `1130 
+V L "address" 9 181 "int8" `1133 
+V L "c" 9 193 "int8" `1135 
+F G "lcd_putc" 9 194 "void(int8 c)" `1134 
+C L "lcd_putc" 9 1 1 "FUNCTION"
+C L "lcd_putc" 9 1 1 "FUNCTION"
+C L "lcd_putc" 9 1 1 "FUNCTION"
+D G "lcd_clear" 9 235 "()    lcd_send_byte(0,1); ;delay_ms(25)"
+C G "" 10 1 1 "*"
+C G "" 10 1 1 "*"
+D G "TIMER_H" 10 9 ""
+V G "timerIntSay" 10 15 "int32" `715 
+D G "millis" 10 17 "() timerIntSay"
+D G "setMillis" 10 18 "(x) timerIntSay=x"
+f G "timer_kur" 10 20 "void()" `1136 
+f G "Timer0_int" 10 21 "void()" `1137  "TIMER_H *"
+C L "Timer0_int" 10 1 1 "*"
+C L "Timer0_int" 10 1 1 "*"
+C L "Timer0_int" 10 1 2 "*"
+F G "timer_kur" 11 2 "void()" `1136 
+C L "timer_kur" 11 4 2 "FUNCTION"
+C L "timer_kur" 11 4 11 "FUNCTION"
+C L "timer_kur" 11 4 1 "FUNCTION"
+V G "say" 11 22 "int16" `1138 
+F G "Timer0_int" 11 24 "void()" `1137  "set_timer0(0x43);            //1000uS 16Mhz"
+C L "Timer0_int" 11 4 2 "FUNCTION"
+C G "" 13 1 1 "*"
+C G "" 13 1 1 "*"
+C G "" 13 1 1 "*"
+C G "" 13 8 1 "*"
+C G "" 13 8 1 "*"
+C G "" 13 8 1 "*"
+C G "" 13 8 1 "*"
+C G "" 13 8 1 "*"
+C G "" 13 8 1 "*"
+C G "" 13 8 1 "*"
+D G "DFPLAYER_H" 13 20 ""
+T G "mbyte" 13 25 "int8" `1139 
+D G "startByte" 13 27 "0x7E"
+D G "endByte" 13 28 "0xEF"
+D G "versionByte" 13 29 "0xFF"
+D G "dataLength" 13 30 "0x06"
+D G "infoReq" 13 31 "0x01" "0x01"
+D G "isDebug" 13 32 "false"
+D G "dfPlayerMaxSes" 13 33 "30" "dec30:0x1E"
+D G "DF_BUSY_PIN" 13 35 "PIN_C3" "PIN_B3"
+V L "Command" 13 37 "mbyte" `1141 
+V L "Param1" 13 37 "mbyte" `1142 
+V L "Param2" 13 37 "mbyte" `1143 
+f G "sendCommand" 13 37 "void(mbyte Command,mbyte Param1,mbyte Param2)" `1140 
+V L "vol" 13 38 "int8" `1145 
+f G "mp3_set_volume" 13 38 "void(int8 vol)" `1144 
+V L "eq" 13 39 "int8" `1147 
+f G "mp3_set_equalizer" 13 39 "void(int8 eq)" `1146 
+V L "fileNum" 13 40 "int16" `1149 
+f G "mp3_play_physical" 13 40 "void(int16 fileNum)" `1148 
+f G "mp3_get_error" 13 41 "void()" `1150 
+V L "fileNum" 13 42 "int16" `1152 
+f G "mp3_single_loop" 13 42 "void(int16 fileNum)" `1151 
+f G "mp3_enableLoopAll" 13 43 "void()" `1153 
+f G "mp3_disbleLoopAll" 13 44 "void()" `1154 
+V L "dizi" 13 45 "*int8" `1156 
+f G "mp3_getData" 13 45 "void(*int8 dizi)" `1155 
+V L "dizi" 13 46 "*int8" `1158 
+V L "len" 13 46 "int8" `1159 
+f G "mp3_DataSeriGonder" 13 46 "void(*int8 dizi,int8 len)" `1157 
+f G "mp3_stop" 13 47 "void()" `1160 
+f G "mp3_reset" 13 48 "void()" `1161 
+f G "mp3_baslangic" 13 49 "void()" `1162  "DFPLAYER_H *"
+C L "mp3_baslangic" 12 3 2 "FUNCTION"
+V L "Command" 12 7 "mbyte" `1141 
+V L "Param1" 12 7 "mbyte" `1142 
+V L "Param2" 12 7 "mbyte" `1166 
+F G "sendCommand" 12 7 "void(mbyte Command,mbyte Param1,mbyte Param2)" `1140  "disable_interrupts(GLOBAL);"
+C L "sendCommand" 12 3 1 "FUNCTION"
+V L "commandBuffer" 12 11 "mbyte[10]" `1163 
+V L "checkSum" 12 12 "int16" `1164 
+V L "low_cSum" 12 13 "mbyte" `1165 
+V L "high_cSum" 12 14 "mbyte" `1166 
+C L "sendCommand" 12 3 2 "FUNCTION"
+V L "cnt" 12 29 "int8" `1167 
+C L "sendCommand" 12 3 2 "FUNCTION"
+C L "sendCommand" 12 3 1 "FUNCTION"
+C L "sendCommand" 12 3 1 "FUNCTION"
+C L "mp3_set_volume" 12 3 2 "FUNCTION"
+V L "vol" 12 43 "int8" `1169 
+F G "mp3_set_volume" 12 43 "void(int8 vol)" `1144 
+C L "mp3_set_equalizer" 12 3 2 "FUNCTION"
+V L "eq" 12 48 "int8" `1169 
+F G "mp3_set_equalizer" 12 48 "void(int8 eq)" `1146 
+C L "mp3_play_physical" 12 3 2 "FUNCTION"
+V L "fileNum" 12 53 "int16" `1169 
+F G "mp3_play_physical" 12 53 "void(int16 fileNum)" `1148 
+C L "mp3_play_physical" 12 3 1 "FUNCTION"
+V L "fileNum" 12 58 "int16" `1169 
+F G "mp3_single_loop" 12 58 "void(int16 fileNum)" `1151 
+F G "mp3_enableLoopAll" 12 61 "void()" `1153 
+F G "mp3_disbleLoopAll" 12 64 "void()" `1154 
+C L "mp3_play" 12 3 2 "FUNCTION"
+F G "mp3_play" 12 69 "void(int16 fileNum)" `1168 
+V L "fileNum" 12 73 "int16" `1170 
+F G "mp3_play" 12 74 "void(int16 fileNum)" `1169  "mp3_send_cmd (0x12, num);"
+F G "mp3_stop" 12 78 "void()" `1160 
+F G "mp3_reset" 12 81 "void()" `1161 
+F G "mp3_get_error" 12 85 "void()" `1150 
+V L "dizi" 12 89 "*int8" `1172 
+F G "mp3_getData" 12 89 "void(*int8 dizi)" `1155  "kilitlendi ....."
+V L "i" 12 90 "int8" `1171 
+V L "dizi" 12 100 "*int8" `1158 
+V L "len" 12 100 "int8" `1174 
+F G "mp3_DataSeriGonder" 12 100 "void(*int8 dizi,int8 len)" `1157 
+V L "k" 12 101 "int8" `1172 
+V L "ses" 12 108 "int8" `1180 
+F G "mp3_baslangic" 12 108 "void(int8 ses)" `1179 
+C L "mp3_baslangic" 12 3 1 "FUNCTION"
+C L "mp3_baslangic" 12 3 2 "FUNCTION"
+C L "mp3_baslangic" 12 3 1 "FUNCTION"
+C L "mp3_baslangic" 12 3 3 "FUNCTION"
+C G "" 13 1 1 "*"
+C G "" 13 1 1 "*"
+C G "" 13 1 1 "*"
+C G "" 13 8 1 "*"
+C G "" 13 8 1 "*"
+C G "" 13 8 1 "*"
+C G "" 13 8 1 "*"
+C G "" 13 8 1 "*"
+C G "" 13 8 1 "*"
+C G "" 13 8 1 "*"
+C G "" 13 8 2 "*"
+V G "jetonSay" 0 18 "int8" `1181 
+V G "calismaJetonSay" 0 18 "int8" `1182 
+V G "jetonAtildi" 0 19 "int1" `1183 
+V G "b1" 0 20 "int1" `1184 
+V G "b2" 0 20 "int1" `1185 
+V G "o1_mod_say" 0 21 "int8" `1186 
+V G "o2_mod_say" 0 21 "int8" `1187 
+V G "o1_mod" 0 21 "int8" `1188 
+V G "o2_mod" 0 21 "int8" `1189 
+V G "time" 0 23 "int32" `1190 
+V G "toplam_jeton_sayisi" 0 24 "int32" `1191  "Oyuncak çalýþmaya baþladýðý andan itibaren kullanýlan jeton sayýsý"
+V G "pwm_max_deger" 0 27 "int16" `1192 
+V G "v1_pwm" 0 27 "int16" `1193 
+V G "v2_pwm" 0 27 "int16" `1194 
+V G "akim_adc_deger1" 0 28 "int16" `1195 
+V G "akim_adc_deger2" 0 28 "int16" `1196 
+V G "tekerlek_yari_cap" 0 30 "float" `1197 
+V G "rpm1" 0 33 "int16" `1199 
+V G "rpm2" 0 33 "int16" `1200 
+V G "rps1" 0 33 "int16" `1201 
+V G "rps2" 0 33 "int16" `1202 
+V G "pevtime1" 0 35 "int32" `1203 
+V G "pevtime2" 0 35 "int32" `1204 
+V G "dtime1" 0 35 "int32" `1205 
+V G "dtime2" 0 35 "int32" `1206 
+V G "timetaken1" 0 36 "int16" `1207 
+V G "timetaken2" 0 36 "int16" `1208 
+V G "v1" 0 37 "float" `1209 
+V G "v2" 0 37 "float" `1210 
+V G "rotation1" 0 38 "int8" `1211 
+V G "rotation2" 0 38 "int8" `1212 
+V G "tekerlek_tur1" 0 39 "int16" `1213 
+V G "tekerlek_tur2" 0 39 "int16" `1214 
+V G "pist_tur1" 0 40 "int16" `1215 
+V G "pist_tur2" 0 40 "int16" `1216 
+V G "sira1" 0 41 "int8" `1217 
+V G "sira2" 0 41 "int8" `1218 
+V G "yol1" 0 43 "float" `1219 
+V G "yol2" 0 43 "float" `1220 
+V G "time_mod_sec" 0 45 "int32" `1221 
+V G "time_bis_sec" 0 46 "int32" `1222 
+V G "time_oyun" 0 47 "int32" `1223 
+V G "time_oyun_sure_say" 0 48 "int32" `1224 
+V G "bisiklet_secme_suresi" 0 50 "int16" `1225 
+V G "zmn_say1" 0 52 "int8" `1226 
+V G "zmn_say2" 0 52 "int8" `1227 
+V G "dfPlayer_ses" 0 53 "int8" `1228 
+V G "calisma_jeton_sayisi" 0 53 "int8" `1229 
+V G "oyun_basladi" 0 55 "int1" `1230 
+V G "bis_sec_sure_bitti" 0 55 "int1" `1231 
+V G "bis_sec_sure_baslat" 0 55 "int1" `1232 
+V G "m1_pwm_deger" 0 57 "int16" `1233 
+V G "m2_pwm_deger" 0 58 "int16" `1234 
+V G "panel" 0 65 "{int8 komut,int8 veri_low,int8 veri_high}" `1239 
+f G "oyun_giris_islemler" 0 67 "void()" `1240 
+f G "oyun_islemler" 0 68 "void()" `1241 
+f G "o1_akim_olc" 0 69 "void()" `1242 
+f G "o2_akim_olc" 0 70 "void()" `1243 
+f G "o1_hiz_olcum" 0 71 "void()" `1244 
+f G "o2_hiz_olcum" 0 72 "void()" `1245 
+f G "ISR_RB0" 0 73 "void()" `1246 
+f G "ISR_RB1" 0 74 "void()" `1247 
+f G "ISR_RB2" 0 75 "void()" `1248 
+f G "ISR_RB_Change" 0 76 "void()" `1249 
+f G "mp3_rastgele" 0 77 "void()" `1250 
+V L "x" 0 79 "int16" `1252 
+V L "in_min" 0 79 "int16" `1253 
+V L "in_max" 0 79 "int16" `1254 
+V L "out_min" 0 79 "int16" `1255 
+V L "out_max" 0 79 "int16" `1256 
+f G "map" 0 79 "int16(int16 x,int16 in_min,int16 in_max,int16 out_min,int16 out_max)" `1251 
+D G "EE_ADR_TOP_JTN_SYS" 14 1 "0" "32 bit 0-3"
+D G "EE_ADR_OYUN_SURE" 14 2 "4" "8bit dk*10 þeklinde kaydediliyor."
+D G "EE_ADR_BIS_SEC_SURE" 14 3 "5" "8 bit saniye"
+D G "EE_ADR_JTN_SYS" 14 4 "6" "8 bit. RFID çalýþmayacaksa çalýþma jeton sayýsý"
+D G "EE_ADR_MAX_SES" 14 5 "7" "8 bit . DF player ses seviyesi"
+D G "EE_ADR_MAX_PWM" 14 6 "8" "16 bit 8-9. PWM max deðeri"
+C L "map" 14 8 1 "FUNCTION"
+F G "ee_ilk_baslama_degerleri_oku" 14 10 "void()" `1257 
+C L "ee_ilk_baslama_degerleri_oku" 14 8 1 "FUNCTION"
+C L "ee_ilk_baslama_degerleri_oku" 14 8 1 "FUNCTION"
+C L "ee_ilk_baslama_degerleri_oku" 14 25 1 "*60"
+C L "ee_ilk_baslama_degerleri_oku" 14 25 1 "FUNCTION"
+C G "" 3 1 1 "*"
+C G "" 3 1 1 "*"
+D G "BUTON_SOL_PIN" 15 3 "PIN_A4"
+D G "BUTON_ONAY_PIN" 15 4 "PIN_A5"
+D G "BUTON_SAG_PIN" 15 5 "PIN_E2"
+D G "BUTON_SOL" 15 7 "'s'"
+D G "BUTON_ONAY" 15 8 "'o'"
+D G "BUTON_SAG" 15 9 "'g'"
+D G "MENU_SAYISI" 15 11 "8"
+D G "BUTON_GECIKME" 15 13 "350"
+F G "btn_getir" 15 16 "int8()" `1287 
+V L "btn_pin" 15 38 "int16" `1289 
+V L "sure" 15 38 "int16" `1290 
+F G "uzunBasBtnGetir" 15 38 "int8(int16 btn_pin,int16 sure)" `1288 
+V L "x" 15 39 "int16" `1291 
+C L "uzunBasBtnGetir" 15 43 1 "FUNCTION"
+C L "uzunBasBtnGetir" 15 43 1 "FUNCTION"
+C L "uzunBasBtnGetir" 15 43 1 "FUNCTION"
+V L "sec" 15 61 "int8" `1296 
+F G "lcd_menu_sec" 15 61 "void(int8 sec)" `1295 
+V L "n" 15 104 "int8" `1317 
+F G "oyun_sure_kaydet" 15 104 "int8(int8 n)" `1316 
+V L "oyun_sure" 15 105 "float" `1318 
+V L "btn" 15 106 "int8" `1319 
+C L "oyun_sure_kaydet" 15 43 1 "FUNCTION"
+C L "oyun_sure_kaydet" 15 43 1 "FUNCTION"
+V L "n" 15 139 "int8" `1334  "Bisiklet seçme süresi kaydet."
+F G "secme_sure_kaydet" 15 140 "int8(int8 n)" `1333 
+V L "sec_sure" 15 141 "int8" `1335 
+V L "btn" 15 142 "int8" `1336 
+V L "n" 15 172 "int8" `1341 
+F G "motor_pwm_kaydet" 15 172 "int8(int8 n)" `1340 
+V L "pwm" 15 173 "int16" `1342 
+V L "btn" 15 174 "int8" `1343 
+V L "time_akim_olc" 15 177 "int32" `1344 
+C L "motor_pwm_kaydet" 15 43 1 "FUNCTION"
+C L "motor_pwm_kaydet" 15 43 1 "FUNCTION"
+C L "motor_pwm_kaydet" 15 43 1 "FUNCTION"
+C L "motor_pwm_kaydet" 15 43 1 "FUNCTION"
+V L "m1_dur" 15 252 "int1" `1356 
+V L "m2_dur" 15 252 "int1" `1357 
+V L "time" 15 253 "int32" `1358 
+V L "time_m12_dur" 15 254 "int32" `1359 
+C L "motor_pwm_kaydet" 15 43 1 "FUNCTION"
+C L "motor_pwm_kaydet" 15 43 1 "FUNCTION"
+C L "motor_pwm_kaydet" 15 43 1 "FUNCTION"
+V L "n" 15 283 "int8" `1361 
+F G "sensor_test" 15 283 "int8(int8 n)" `1360 
+V L "btn" 15 284 "int8" `1362 
+C L "sensor_test" 15 43 2 "FUNCTION"
+V L "n" 15 357 "int8" `1380 
+F G "dfPlayer_ses_kaydet" 15 357 "int8(int8 n)" `1379 
+V L "ses" 15 358 "int8" `1381 
+V L "btn" 15 359 "int8" `1382 
+V L "n" 15 392 "int8" `1387 
+F G "jeton_calisma_sayi_kaydet" 15 393 "int8(int8 n)" `1386 
+V L "jtn" 15 394 "sint8" `1388 
+V L "btn" 15 395 "int8" `1389 
+V L "n" 15 428 "int8" `1400 
+F G "ee_reset" 15 428 "int8(int8 n)" `1399 
+V L "btn" 15 429 "int8" `1401 
+C L "ee_reset" 15 43 1 "FUNCTION"
+C L "ee_reset" 15 43 1 "FUNCTION"
+C L "ee_reset" 15 43 1 "FUNCTION"
+C L "ee_reset" 15 43 1 "FUNCTION"
+F G "lcd_menu_islem" 15 472 "void()" `1414 
+V L "btn" 15 474 "int8" `1415 
+V L "alt_menu" 15 475 "sint8" `1416 
+V L "cikis" 15 476 "int1" `1417 
+C L "lcd_menu_islem" 15 43 1 "FUNCTION"
+F G "MAIN" 0 84 "int8()" `1421 
+C L "MAIN" 0 89 2 "FUNCTION"
+C L "MAIN" 0 89 2 "FUNCTION"
+C L "MAIN" 0 89 1 "FUNCTION"
+C L "MAIN" 0 89 1 "FUNCTION"
+C L "MAIN" 0 89 2 "FUNCTION"
+C L "MAIN" 0 89 1 "FUNCTION"
+C L "MAIN" 0 89 2 "FUNCTION"
+C L "MAIN" 0 89 1 "FUNCTION"
+C L "MAIN" 0 89 1 "FUNCTION"
+C L "MAIN" 0 89 1 "FUNCTION"
+C L "MAIN" 0 89 1 "FUNCTION"
+C L "MAIN" 0 89 1 "FUNCTION"
+C L "MAIN" 0 89 1 "FUNCTION"
+C L "MAIN" 0 89 1 "FUNCTION"
+C L "MAIN" 0 89 1 "FUNCTION"
+C L "MAIN" 0 89 1 "FUNCTION"
+C L "MAIN" 0 89 1 "FUNCTION"
+C L "MAIN" 0 89 1 "FUNCTION"
+C L "MAIN" 0 89 1 "FUNCTION"
+C L "MAIN" 0 89 1 "FUNCTION"
+C L "MAIN" 0 89 1 "FUNCTION"
+C L "MAIN" 0 89 1 "FUNCTION"
+C L "MAIN" 0 89 3 "FUNCTION"
+C L "MAIN" 0 89 1 "FUNCTION"
+V G "mp3_sarki" 0 218 "int8" `1438 
+V G "mp3_sarki_list" 0 219 "int8[7]" `1439 
+V G "mp3_index" 0 220 "int8" `1440 
+F G "mp3_list_kontrol" 0 222 "int8()" `1441 
+V L "x" 0 223 "int8" `1442 
+F G "mp3_rastgele" 0 232 "void()" `1250 
+C L "mp3_rastgele" 0 89 1 "FUNCTION"
+C L "mp3_rastgele" 0 89 1 "FUNCTION"
+F G "oyun_giris_islemler" 0 258 "void()" `1240 
+C L "oyun_giris_islemler" 0 89 1 "FUNCTION"
+C L "oyun_giris_islemler" 0 89 2 "FUNCTION"
+C L "oyun_giris_islemler" 0 89 1 "FUNCTION"
+C L "oyun_giris_islemler" 0 89 1 "FUNCTION"
+C L "oyun_giris_islemler" 0 89 2 "FUNCTION"
+C L "oyun_giris_islemler" 0 89 2 "FUNCTION"
+C L "oyun_giris_islemler" 0 89 3 "FUNCTION"
+C L "oyun_giris_islemler" 0 89 3 "FUNCTION"
+C L "oyun_giris_islemler" 0 89 1 "FUNCTION"
+C L "oyun_giris_islemler" 0 89 1 "FUNCTION"
+C L "oyun_giris_islemler" 0 89 1 "FUNCTION"
+C L "oyun_giris_islemler" 0 89 1 "FUNCTION"
+C L "oyun_giris_islemler" 0 89 1 "FUNCTION"
+F G "oyun_islemler" 0 439 "void()" `1241 
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+V L "x_fill" 0 459 "int8" `1483 
+V L "buf_str" 0 460 "int8[50]" `1484 
+V L "m1_var_yok" 0 460 "int8" `1485 
+V L "m2_var_yok" 0 460 "int8" `1486 
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+V L "sistem_mod_hiz_deg_say" 0 462 "int8" `1487 
+V L "time_tur_olc1" 0 463 "int32" `1488 
+V L "time_tur_olc2" 0 464 "int32" `1489 
+V L "time_veri_gonder" 0 465 "int32" `1490 
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+V L "time_oynanan_sure" 0 467 "int32" `1491 
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 2 "FUNCTION"
+C L "oyun_islemler" 0 89 4 "FUNCTION"
+C L "oyun_islemler" 0 89 3 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 5 "FUNCTION"
+C L "oyun_islemler" 0 89 5 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 2 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 2 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 2 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+V L "m1_dur" 0 689 "int1" `1512 
+V L "m2_dur" 0 689 "int1" `1513 
+V L "time" 0 690 "int32" `1514 
+V L "time_m12_dur" 0 691 "int32" `1515 
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+C L "oyun_islemler" 0 89 1 "FUNCTION"
+F G "o1_hiz_olcum" 0 738 "void()" `1244 
+C L "o1_hiz_olcum" 0 89 1 "FUNCTION"
+C L "o1_hiz_olcum" 0 89 1 "FUNCTION"
+C L "o1_hiz_olcum" 0 89 1 "FUNCTION"
+C L "o1_hiz_olcum" 0 89 2 "FUNCTION"
+F G "o2_hiz_olcum" 0 758 "void()" `1245 
+C L "o2_hiz_olcum" 0 89 1 "FUNCTION"
+C L "o2_hiz_olcum" 0 89 1 "FUNCTION"
+C L "o2_hiz_olcum" 0 89 1 "FUNCTION"
+C L "o2_hiz_olcum" 0 89 2 "FUNCTION"
+F G "o1_akim_olc" 0 778 "void()" `1242 
+V L "ornek" 0 779 "int8" `1520 
+F G "o2_akim_olc" 0 789 "void()" `1243 
+V L "ornek" 0 790 "int8" `1521 
+C L "ISR_RB0" 0 800 1 "*"
+F G "ISR_RB0" 0 803 "void()" `1246  "printf(lcd_putc,"\fINT_EXT0-JTN1");"
+F G "ISR_RB1" 0 811 "void()" `1247  "if(!input(HIZ1_SENS_PIN)){"
+C L "ISR_RB1" 0 800 2 "FUNCTION"
+C L "ISR_RB1" 0 800 2 "FUNCTION"
+F G "ISR_RB2" 0 827 "void()" `1248  "if(!input(HIZ2_SENS_PIN)){"
+C L "ISR_RB2" 0 800 2 "FUNCTION"
+C L "ISR_RB2" 0 800 2 "FUNCTION"
+F G "ISR_RB_Change" 0 843 "void()" `1249 
+C L "ISR_RB_Change" 0 800 1 "FUNCTION"
+C L "ISR_RB_Change" 0 800 2 "FUNCTION"
+C L "ISR_RB_Change" 0 800 1 "FUNCTION"
+C L "ISR_RB_Change" 0 800 2 "FUNCTION"
+C L "ISR_RB_Change" 0 800 2 "FUNCTION"
+V L "x" 0 870 "int16" `1252 
+V L "in_min" 0 870 "int16" `1253 
+V L "in_max" 0 870 "int16" `1254 
+V L "out_min" 0 870 "int16" `1255 
+V L "out_max" 0 870 "int16" `1527 
+F G "map" 0 871 "int16(int16 x,int16 in_min,int16 in_max,int16 out_min,int16 out_max)" `1251 
+F B "reset_cpu" 0 0
+F B "abs" 1 0
+F B "sleep" 0 1
+F B "delay_cycles" 1 0
+F B "read_bank" 2 0
+F B "write_bank" 3 0
+F B "shift_left" 2 2
+F B "shift_right" 2 2
+F B "rotate_left" 2 0
+F B "rotate_right" 2 0
+F B "_mul" 2 0
+F B "memset" 3 0
+F B "isamoung" 2 0
+F B "isamong" 2 0
+F B "bit_set" 2 0
+F B "bit_clear" 2 0
+F B "bit_test" 2 0
+F B "toupper" 1 0
+F B "tolower" 1 0
+F B "swap" 1 0
+F B "printf" 1 255
+F B "fprintf" 1 255
+F B "sprintf" 1 255
+F B "scanf" 1 255
+F B "fscanf" 1 255
+F B "make8" 2 0
+F B "make16" 2 0
+F B "make32" 1 255
+F B "label_address" 1 1
+F B "goto_address" 1 0
+F B "_va_arg" 1 0
+F B "offsetofbit" 2 2
+F B "_iosctrl" 1 2
+F B "profileout" 1 2
+F B "enable_interrupts" 1 0
+F B "disable_interrupts" 1 0
+F B "interrupt_active" 1 0
+F B "clear_interrupt" 1 0
+F B "interrupt_enabled" 1 0
+F B "jump_to_isr" 1 0
+F B "ext_int_edge" 1 2
+F B "read_eeprom" 1 0
+F B "write_eeprom" 2 0
+F B "read_program_eeprom" 1 0
+F B "write_program_eeprom" 2 0
+F B "write_program_memory" 3 0
+F B "read_program_memory" 3 0
+F B "read_rom_memory" 3 0
+F B "erase_program_eeprom" 1 0
+F B "write_configuration_memory" 2 3
+F B "read_configuration_memory" 2 3
+F B "strcpy" 2 0
+F B "memcpy" 3 0
+F B "strstr100" 2 0
+F B "output_high" 1 0
+F B "output_low" 1 0
+F B "input" 1 0
+F B "input_state" 1 0
+F B "output_float" 1 0
+F B "output_drive" 1 0
+F B "output_bit" 1 1
+F B "output_toggle" 1 0
+F B "output_a" 1 0
+F B "output_b" 1 0
+F B "output_c" 1 0
+F B "output_d" 1 0
+F B "output_e" 1 0
+F B "input_a" 0 0
+F B "input_b" 0 0
+F B "input_c" 0 0
+F B "input_d" 0 0
+F B "input_e" 0 0
+F B "set_tris_a" 1 0
+F B "set_tris_b" 1 0
+F B "set_tris_c" 1 0
+F B "set_tris_d" 1 0
+F B "set_tris_e" 1 0
+F B "get_tris_a" 0 0
+F B "get_tris_b" 0 0
+F B "get_tris_c" 0 0
+F B "get_tris_d" 0 0
+F B "get_tris_e" 0 0
+F B "input_change_a" 0 0
+F B "input_change_b" 0 0
+F B "input_change_c" 0 0
+F B "input_change_d" 0 0
+F B "input_change_e" 0 0
+F B "set_slow_slew_a" 1 0
+F B "set_slow_slew_b" 1 0
+F B "set_slow_slew_c" 1 0
+F B "set_slow_slew_d" 1 0
+F B "set_slow_slew_e" 1 0
+F B "port_b_pullups" 1 0
+F B "port_e_pullups" 1 0
+F B "setup_counters" 2 0
+F B "setup_wdt" 1 0
+F B "restart_cause" 0 0
+F B "restart_wdt" 0 0
+F B "get_rtcc" 0 0
+F B "set_rtcc" 1 0
+F B "get_timer0" 0 0
+F B "set_timer0" 1 0
+F B "setup_comparator" 1 0
+F B "setup_port_a" 1 2
+F B "setup_adc_ports" 1 2
+F B "get_adc_ports" 0 0
+F B "setup_adc" 1 0
+F B "set_adc_channel" 1 0
+F B "read_adc" 0 1
+F B "adc_done" 0 0
+F B "setup_timer_0" 1 0
+F B "setup_vref" 1 0
+F B "setup_timer_1" 1 0
+F B "get_timer1" 0 0
+F B "set_timer1" 1 0
+F B "setup_timer_2" 3 0
+F B "get_timer2" 0 0
+F B "set_timer2" 1 0
+F B "setup_timer_3" 1 0
+F B "set_timer3" 1 0
+F B "get_timer3" 0 0
+F B "setup_timer_4" 3 0
+F B "get_timer4" 0 0
+F B "set_timer4" 1 0
+F B "setup_timer_6" 3 0
+F B "get_timer6" 0 0
+F B "set_timer6" 1 0
+F B "setup_timer_5" 1 0
+F B "get_timer5" 0 0
+F B "set_timer5" 1 0
+F B "setup_ccp1" 1 2
+F B "set_pwm1_duty" 1 0
+F B "setup_ccp2" 1 2
+F B "set_pwm2_duty" 1 0
+F B "setup_ccp3" 1 2
+F B "set_pwm3_duty" 1 0
+F B "setup_ccp4" 1 0
+F B "set_pwm4_duty" 1 0
+F B "setup_ccp5" 1 0
+F B "set_pwm5_duty" 1 0
+F B "setup_low_volt_detect" 1 0
+F B "setup_oscillator" 0 2
+F B "setup_spi" 1 0
+F B "spi_read" 0 1
+F B "spi_write" 1 2
+F B "spi_data_is_in" 0 0
+F B "setup_spi2" 1 0
+F B "spi_read2" 0 1
+F B "spi_write2" 1 0
+F B "spi_data_is_in2" 0 0
+F B "setup_dac" 1 0
+F B "dac_write" 1 0
+F B "brownout_enable" 1 0
+F B "delay_ms" 1 0
+F B "delay_us" 1 0
+F B "putchar" 1 2
+F B "puts" 1 2
+F B "getch" 0 1
+F B "gets" 1 3
+F B "kbhit" 0 1
+F B "set_uart_speed" 1 3
+F B "setup_uart" 1 3
