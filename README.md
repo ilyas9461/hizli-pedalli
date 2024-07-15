@@ -41,7 +41,7 @@ Game duration, amount of coins required for its operation, etc. Settings are mad
 
 ## Sample working video :
 
-<a href="https://youtu.be/92c82Suxs3E" target="_blank">
+<a href="https://www.youtube.com/watch?v=KFKP7lpa3pI" target="_blank">
      <img src="./img/youtube.png" alt="youtube" width="55">
 </a>
 
